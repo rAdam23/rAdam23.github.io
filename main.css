@@ -1,0 +1,1127 @@
+#bodyindex{
+    height: auto;
+    /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    font-family: helvetica-neue, sans-serif;
+    background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
+    background-size: 400% 400%;
+    animation: gradient 95s ease infinite;
+    justify-content: center;
+}
+
+#bodyabout{
+    height: auto;
+    /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    font-family: helvetica-neue, sans-serif;
+    background: linear-gradient(-75deg, #e2138a, #f0651b, #f0961b, #8d004c);
+    background-size: 400% 400%;
+    animation: gradient 95s ease infinite;
+    justify-content: center;
+}
+
+#bodyportfolio{
+height: auto;
+/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+background-repeat: no-repeat;
+background-color: #1d1d1d;
+   padding: 0px;
+   margin: 0px;
+font-family: helvetica-neue, sans-serif;
+background: linear-gradient(-95deg, #1c75ce, #14766b, #035f1f, #144d9a);
+	background-size: 400% 400%;
+	animation: gradient 95s ease infinite;
+    justify-content: center;
+}
+
+#bodyPortfolioWalleybanque{
+    padding: 0px;
+    margin: 0px;
+    background-color: #1d1d1d;
+    font-family: helvetica-neue, sans-serif;
+    background: linear-gradient(85deg, #1d1d1d, #454545);
+    background-size: 400% 400%;
+    justify-content: center;
+}
+
+#bodyPortfolioRmit{
+    padding: 0px;
+    margin: 0px;
+    background-color: #1d1d1d;
+    font-family: helvetica-neue, sans-serif;
+    background: linear-gradient(85deg, #1d1d1d, #454545);
+    background-size: 400% 400%;
+    justify-content: center;
+}
+
+
+#bodycode{
+height: auto;
+/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+background-repeat: no-repeat;
+background-color: #ffff;
+   padding: 0px;
+   margin: 0px;
+font-family: helvetica-neue, sans-serif;
+background: linear-gradient(45deg, #a81397, #590983, #391cb2, #8300b4);
+	background-size: 400% 400%;
+	animation: gradient 95s ease infinite;
+    justify-content: center;
+}
+
+#bodycontact{
+height: auto;
+/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+background-repeat: no-repeat;
+background-color: #ffff;
+   padding: 0px;
+   margin: 0px;
+font-family: helvetica-neue, sans-serif;
+background: linear-gradient(-95deg, #0b2c98, #1c11a3, #67096f, #af1267);
+	background-size: 400% 400%;
+	animation: gradient 95s ease infinite;
+    justify-content: center;
+}
+
+#bodylogin{
+height: auto;
+/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+background-repeat: no-repeat;
+background-color: #ffff;
+   padding: 0px;
+   margin: 0px;
+font-family: helvetica-neue, sans-serif;
+background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
+	background-size: 400% 400%;
+	animation: gradient 95s ease infinite;
+    justify-content: center;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#navbar{
+    display: flex;
+    align-content: center;
+    color: #ffff;
+    flex-direction: row;
+    background-color: none;
+    padding: 8px;
+    justify-content: center;
+}
+
+#logolink{
+    padding-left: 30px;
+    padding-top: 4px;
+    font-weight: 600;
+    font-family: sans-serif;
+    flex-grow:4; 
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#returnBackLink{
+    margin-left: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 21px;
+    align-content: flex-start;
+}
+
+#returnLinkStyle{
+    text-decoration: none;
+    color: white;
+}
+
+#spacerLink{
+    padding-top: 4px;
+    flex-grow:4; 
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#logolink2{
+    padding-left: 4px;
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    flex-grow:4; 
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#navbarlinks{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;  
+    padding-right:20px;
+    text-align: center;
+    align-content: center;
+    margin-top: 5px;
+
+}
+
+#codelink, #aboutlink, #githublink, #portfoliolink, #loginlink {
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+#codelink:hover{
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.49);
+    border-bottom-width: 3px;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#aboutlink:hover{
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.49);
+    border-bottom-width: 3px;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#githublink:hover{
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.49);
+    border-bottom-width: 3px;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+#portfoliolink:hover{
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.49);
+    border-bottom-width: 3px;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#contactlink {
+    font-size: 14px;
+    font-weight: 600;   
+    border-color: #ffff;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: rgba(255, 255, 255, 0.24);
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+#contactlink:hover{
+    background-color: rgba(255, 255, 255, 0.32);
+    
+}
+
+#loginlink:hover{
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.49);
+    border-bottom-width: 3px;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+
+#herobanner{
+    height: 140px;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+}
+
+#herotext{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 82px;
+    margin-top: 200px;
+    margin-left: 8%;
+    border-radius: 15px;
+    font-size-adjust: auto;
+}
+
+#section2{
+    min-height: 900px; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#section2portfolio{
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#heroimgbox{
+    background-color: black;
+    border-radius: 15px;
+    height: 500px;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+    overflow: hidden;
+    background-image: url(radm23home.png);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+}
+
+
+#section2aboutbox, #section2codebox, #section3contactbox {
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px;    
+}
+
+#section2portfoliobox{
+    margin-top: 70px;    
+    height: 340px;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolioboxrow1{
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+#walleybanq{
+    height: 280px;
+    width: 280px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#rmit{
+    height: 280px;
+    width: 280px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#hsbc{
+    height: 280px;
+    width: 280px;
+    background-repeat: no-repeat;
+    opacity:40%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#section2aboutbox{
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+}
+
+#aboutTextTitle{
+    font-weight: 500;
+    font-size: 22px;
+    color: #272727;
+}
+
+#aboutText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #343434;
+    margin-top: -2px;
+}
+
+#emoji{
+    font-size: 34px;
+    
+}
+
+#footerblock{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: auto;
+    flex-shrink:auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+}
+
+
+#footertext{
+    font-size: 12px;
+    color: white;
+    opacity: 50%;
+    
+}
+
+#section1login{
+    display: flex;
+    height:auto;
+    width:100vw;
+    justify-content: center;
+    align-content: center;
+    margin-top: 300px;
+    
+}
+
+
+
+#section1loginbox{
+    height: 300px;
+    width: 280px;
+    overflow: hidden;
+    opacity: 100%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: -120px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    }
+
+
+#usernametext{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 60px;
+    width: 270px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d1d1d1; 
+    margin-bottom: 10px;
+    padding-left: 30px;
+
+}
+
+#passwordtext{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 60px;
+    width: 270px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d1d1d1;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+#loginbutton{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 60px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    color:#ffffff;
+    background-color: #00618d;  
+    
+}
+
+#loginbutton:hover{
+    background: #006d9f;
+    
+}
+
+#aboutcontactlink{
+    font-size: 14px;
+    width: 70px;
+    align-content: center;
+    font-weight: 600;   
+    border-color: black;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: rgba(57, 77, 113, 0.63);
+    margin-top: -7px;
+    margin-left: 10px;
+    margin-right: 20px;
+    
+}
+
+#aboutcontactlink:hover{
+    background-color: rgba(18, 41, 82, 0.63);
+}
+
+#howtofindbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+
+
+
+/* <----- HERO (ALL CASE STUDIES)------> */
+
+.heroBannerPortfolio{
+    min-height: auto; 
+    height:420px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;    
+}
+
+.heroTextPortfolio{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 5rem;
+    margin-top: 200px;
+    margin-left: 8%;
+    border-radius: 15px;
+    font-size-adjust: auto;
+}
+
+
+/* <-----  CASE STUDY SECTION 1 ------> */
+
+.Section1{
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section1ImgBox{
+    height: 450px;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section1ContainerWalleybanque{
+    display: flex;
+    width:100%;
+    height:auto;
+    background-image: url("blake-wisz-Xn5FbEM9564-unsplash.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 70% 25%;
+}
+
+.Section1ContainerRmit{
+    display: flex;
+    width:100%;
+    height:auto;
+    background-image: url("mitchell-luo-1V8pi2f2Ew4-unsplash.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+/* <-----  CASE STUDY SECTION 2 ------> */
+
+.Section2{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section2Box{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section2Container{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.Section2TextContainer{
+    min-width: 350px;
+    height: auto;
+    max-width: 350px;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.Section2ImgContainerWalleybanque{
+    width: 50%;
+    height: auto;
+    flex: 1;
+    background-image: url("walleylogo.svg");
+    background-color: white;
+    background-size: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Section2ImgContainerRmit{
+    width: 50%;
+    height: auto;
+    flex: 1;
+    background-image: url("rmitlogo.svg");
+    background-color: white;
+    background-size: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* <-----  TEXTBOX HEADINGS/CONTENT ------> */
+
+.textBoxPreHeading{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+.textBoxPreHeading2{
+    font-size: 13px;
+    font-weight: 400;
+    color: #5c5c5c;
+    margin-top: 80px;
+}
+
+.textBoxHeading{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size: 30px;
+    color:black;
+}
+
+.textBoxContent{
+    font-size: 15px;
+    color:black;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: .8px;    
+}
+
+.textBoxContentList{
+    font-size: 15px;
+    color:black;
+    font-weight: 400;
+    line-height: 2.0;
+    letter-spacing: .8px;
+    padding-left:10px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.TextContainerContentBox0{
+    height:auto;
+    min-height:50px;
+    width:20%;
+    min-width:180px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.TextContainerContentBox0RmitSection7{
+    height:auto;
+    min-height:50px;
+    min-width:180px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.TextContainerContentBox1{
+    height:auto;
+    min-height:50px;
+    width:40%;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.TextContainerContentBox2{
+    height:auto;
+    min-height:50px;
+    width:40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* <-----  CASE STUDY SECTION 3 ------> */
+
+.Section3{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section3Box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section3TextContainer{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-content: center;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Section3ImgContainerWalleybanque{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("ergita-sela-zdLRWI_pK_0-unsplash.jpg");
+    background-size: cover;
+    filter: contrast(110%) saturate(110%) brightness(90%);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.Section3ImgContainerRmit{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("charles-forerunner-3fPXt37X6UQ-unsplash.jpg");
+    background-size: cover;
+    filter: contrast(110%) saturate(110%) brightness(90%);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
+/* <-----  CASE STUDY SECTION 4 ------> */
+
+.Section4{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section4Box{
+    height: 700px;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section4Container{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.Section4TextContainer{
+    min-width: 350px;
+    height: auto;
+    max-width: 350px;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.Section4TextContainerRmit{
+    min-width: 350px;
+    height: auto;
+    max-width: 350px;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.Section4ImgContainerWalleybanque{
+    width: 50%;
+    height: auto;
+    flex: 1;
+    background-image: url("EDITED%20victor-xok-BHNVH_Ov9P8-unsplash%202.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Section4ImgContainerRmit{
+    width: 50%;
+    height: auto;
+    flex: 1;
+    background-image: url("annie-spratt-sggw4-qDD54-unsplash.jpg");
+    background-size: cover;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+}
+
+/* <-----  CASE STUDY SECTION 5 ------> */
+
+.Section5{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section5Box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section5TextContainer{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-content: center;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Section5ImgContainerWalleybanque{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("moodboardlrg.png");
+    background-size: 800px;
+    background-color: #484848;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.Section5ImgContainerRmit{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("christopher-burns-Kj2SaNHG-hg-unsplash.jpg");
+    background-size: cover;
+    background-color: #484848;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+/* <-----  CASE STUDY SECTION 6 ------> */
+
+.Section6{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section6Box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section6TextContainer{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-content: center;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Section6ImgContainerWalleybanque{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("Userflow.png");
+    background-size: 130%;
+    background-color: #b4b4b4;
+    background-position: 0% 0%;
+    background-repeat: no-repeat; 
+}
+
+.Section6ImgContainerRmit{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("annie-spratt-CH-ZZW8cbac-unsplash.jpg");
+    background-size: 100%;
+    background-color: #b4b4b4;
+    background-position: 50% 20%;
+    background-repeat: no-repeat; 
+}
+
+/* <-----  CASE STUDY SECTION 7 ------> */
+
+.Section7{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section7Box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section7TextContainer{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-content: center;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Section7ImgContainer{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("frank-holleman-wldvdRBwGuU-unsplash.jpg");
+    filter: contrast(106%);
+    background-size: cover;
+    background-color: #484848;
+    background-position: 50% 40%;
+    background-repeat: no-repeat; 
+}
+
+.Section7ImgContainerRmit{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("joshua-ness-9iqqFZ7OuwY-unsplash.jpg");
+    background-size: cover;
+    background-color: #484848;
+    background-position: 50% 10%;
+    background-repeat: no-repeat; 
+}
+
+/* <-----  CASE STUDY SECTION 8 ------> */
+
+.Section8{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section8Box{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
+
+.Section8Container{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.Section8TextContainer{
+    min-width: 350px;
+    height: auto;
+    max-width: 350px;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.Section8ImgContainerWalleybanque{
+    width: 50%;
+    height: auto;
+    flex: 1;
+    background-image: url("Walleybanque%20App.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Section8ImgContainerRmit{
+    width: 50%;
+    height: auto;
+    flex: 1;
+    background-image: url("final%20prototype%20edit%20for%20upload.png");
+    background-color: #000000;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
