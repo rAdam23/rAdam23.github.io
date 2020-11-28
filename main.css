@@ -1271,6 +1271,7 @@ li{
 }
 
 #sendmessage{
+    -webkit-appearance: none;
     font-size: 18px;
     font-weight: 400;
     font-family: sans-serif;
