@@ -26,6 +26,22 @@
     justify-content: center;
 }
 
+#bodycontact{
+    height: auto;
+    /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    font-family: helvetica-neue, sans-serif;
+    background: linear-gradient(115deg, #330053, #530072, #bc0091, #edb41a);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite alternate;
+    justify-content: center;
+}
+
+
+
 #bodyportfolio{
 height: auto;
 /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
@@ -75,19 +91,7 @@ background: linear-gradient(45deg, #a81397, #590983, #391cb2, #8300b4);
     justify-content: center;
 }
 
-#bodycontact{
-height: auto;
-/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-background-repeat: no-repeat;
-background-color: #ffff;
-   padding: 0px;
-   margin: 0px;
-font-family: helvetica-neue, sans-serif;
-background: linear-gradient(-95deg, #0b2c98, #1c11a3, #67096f, #af1267);
-	background-size: 400% 400%;
-	animation: gradient 95s ease infinite;
-    justify-content: center;
-}
+
 
 #bodylogin{
 height: auto;
@@ -336,7 +340,7 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 }
 
 
-#section2aboutbox, #section2codebox, #section3contactbox {
+#section2aboutbox, #section2codebox {
     height: auto;
     width: 80%;
     box-sizing: border-box;
@@ -346,7 +350,11 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     border-radius: 15px;
     background-color: white;
     box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px;    
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
 }
 
 #section2portfoliobox{
@@ -396,15 +404,7 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     padding-right: 10px;
 }
 
-
-#section2aboutbox{
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-}
-
-#aboutTextTitle{
+#aboutTextTitle {
     font-weight: 500;
     font-size: 22px;
     color: #272727;
@@ -415,11 +415,6 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     font-size: 18px;
     color: #343434;
     margin-top: -2px;
-}
-
-#emoji{
-    font-size: 34px;
-    
 }
 
 #footerblock{
@@ -1125,3 +1120,168 @@ li{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+/* <-----  CONTACT ME ------> */
+
+#section2Content {
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#section2ContactBox {
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+    background-color: white;
+}
+
+#section2ContactWrapper{
+    height: auto;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactTextTitle{
+    font-weight: 500;
+    font-size: 22px;
+    color: #272727;
+    padding-bottom: 20px;
+}
+
+.contactContainer{
+    height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+/* --- ( CONTACT ME AT: ) ----*/
+
+#contactImgEmoji{
+    max-height: 50px;
+    max-width: 50px;
+    font-size: 36px;
+    padding-right: 8px;  
+    padding-left: 8px;  
+    width: 10%;
+}
+#contactImgEmoji2{
+    height: 45px;
+    width: 45px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 8px;
+    margin-right: 8px; 
+}
+
+#contactImgEmoji2facebook{
+    height: 35px;
+    width: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+    margin-right: 12px; 
+    margin-top: 4px;
+}
+
+#contactText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #2f2f2f;
+    width: auto;
+    margin-top: 12px;
+}
+
+#contactTextfbook{
+    font-weight: 400;
+    font-size: 18px;
+    color: #2f2f2f;
+    width: auto;
+    margin-top: 16px;
+}
+
+
+/* --- ( EMAIL ME AT: ) ----*/
+
+#section2ContactWrapper2{
+    height: auto;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    vertical-align: top;
+    align-items: center;
+    background-color: white;
+}
+
+#contactContainerEmail{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#contactTextForm{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 70px;
+    width: 330px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dddddd; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+#contactTextFormMessage{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    min-height: 110px;
+    height: auto;
+    width: 330px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dddddd; 
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+#sendmessage{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 80px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #195a89;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+
