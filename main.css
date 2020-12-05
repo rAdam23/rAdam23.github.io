@@ -120,6 +120,62 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 	}
 }
 
+
+/* <----------------------------------------> */
+
+/* <-----  GLOBAL STYLES --------------------> */
+
+/* <----------------------------------------> */
+
+
+
+
+/* ---- GLOBAL STYLES  (DESKTOP) MIN 800PX -------- */
+
+@media screen and (min-width: 800px) {
+
+#heroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 82px;
+    margin-top: 200px;
+    margin-left: 8%;
+    font-size-adjust: auto;
+}
+
+}
+
+
+
+
+
+/* ---- GLOBAL STYLES  (MOBILE) -------- */
+
+@media screen and (max-width: 800px) {
+    
+#heroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 200px;
+    margin-left: 8%;
+    border-radius: 15px;
+    font-size-adjust: auto;
+}
+
+}
+
+
+
+
+
+
+
+/* <----------------------------------------> */
+
+/* ---- STYLES TO BE ADDED TO GLOBAL -------- */
+
+
 #navbar{
     display: flex;
     align-content: center;
@@ -291,24 +347,22 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     
 }
 
-#herotext{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 82px;
-    margin-top: 200px;
-    margin-left: 8%;
-    border-radius: 15px;
-    font-size-adjust: auto;
-}
 
-#section2{
-    min-height: 900px; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
+
+/* <----------------------------------------> */
+
+/* <-----  PORTFOLIO PAGE -------------------> */
+
+/* <----------------------------------------> */
+
+
+
+
+
+/* <-----  PORTFOLIO (DESKTOP) MIN-WIDTH 800PX -----------------> */
+
+@media screen and (min-width: 800px) {
+
 
 #section2portfolio{
     min-height: auto; 
@@ -317,38 +371,6 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-#heroimgbox{
-    background-color: black;
-    border-radius: 15px;
-    height: 500px;
-    width: 70%;
-    margin-top: 100px;
-    margin-left: 100px;
-    overflow: hidden;
-    background-image: url(radm23home.png);
-    background-repeat: no-repeat;
-    background-size: 140%;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-}
-
-
-#section2aboutbox, #section2codebox {
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
 }
 
 #section2portfoliobox{
@@ -372,6 +394,119 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     height: auto;
     justify-content: space-between;
 }
+
+    
+    
+}
+
+
+
+/* <-----  PORTFOLIO (MOBILE) MAX-WIDTH 800PX -----------------> */
+
+
+@media screen and (max-width: 800px) {
+
+
+#section2portfolio{
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#section2portfoliobox{
+    margin-top: 70px;    
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolioboxrow1{
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+    
+    
+}
+
+
+
+/* <----------------------------------------> */
+/* <----------------------------------------> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section2{
+    min-height: 900px; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+#heroimgbox{
+    background-color: black;
+    border-radius: 15px;
+    height: 500px;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+    overflow: hidden;
+    background-image: url(radm23home.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+}
+
+
+#section2aboutbox, #section2codebox {
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+}
+
+
+
+
 
 #walleybanq{
     height: 280px;
@@ -542,7 +677,6 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 }
 
 
-
 /* <----- HERO (ALL CASE STUDIES)------> */
 
 .heroBannerPortfolio{
@@ -553,15 +687,6 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     flex-direction: row;    
 }
 
-.heroTextPortfolio{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 5rem;
-    margin-top: 200px;
-    margin-left: 8%;
-    border-radius: 15px;
-    font-size-adjust: auto;
-}
 
 
 /* <-----  CASE STUDY SECTION 1 ------> */
@@ -1119,6 +1244,14 @@ li{
 
 
 
+/* <----------------------------------------> */
+
+/* <-----  CONTACT PAGE --------------------> */
+
+/* <----------------------------------------> */
+
+
+
 
 /* <-----  CONTACT (DESKTOP) MIN-WIDTH 800PX -----------------> */
 
@@ -1130,15 +1263,6 @@ li{
     width: 100vw;
     justify-content: left;
     align-content: center;
-}
-    
-#contentHeroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 82px;
-    margin-top: 200px;
-    margin-left: 8%;
-    font-size-adjust: auto;
 }
     
 #section2Content {
@@ -1304,8 +1428,6 @@ li{
 }
 
 
-    
-
 }
 
 
@@ -1322,16 +1444,6 @@ li{
     width: 100vw;
     justify-content: left;
     align-content: center;
-}
-    
-#contentHeroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 70px;
-    margin-top: 200px;
-    margin-left: 8%;
-    border-radius: 15px;
-    font-size-adjust: auto;
 }
     
 #section2Content {
@@ -1501,13 +1613,9 @@ li{
 
 
 
+/* <----------------------------------------> */
+/* <----------------------------------------> */
 
-
-
-
-
-
-    
 
 
 
