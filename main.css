@@ -385,16 +385,30 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 }
 
 #portfolioboxrow1{
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 40px;
+
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
+
+#walleybanq, #rmit, #hsbc{
+    width: 280px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+#hsbc{
+    opacity:40%;
+    margin-bottom: 20px;
+} 
+    
+    
     
     
 }
@@ -420,6 +434,8 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     margin-top: 70px;    
     height: auto;
     width: 80%;
+    min-width: 300px;
+    max-width: 500px;
     box-sizing: border-box;
     border-radius: 15px;
     background-color: #ffffff;
@@ -428,16 +444,26 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 }
 
 #portfolioboxrow1{
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 40px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    justify-content: space-between;
+    align-items: center;
 }
 
+
+#walleybanq, #rmit, #hsbc{
+    max-width: 240px;
+    min-width: 240px;
+    background-repeat: no-repeat;
+    margin-bottom: -30px;
+}
+
+#hsbc{
+    opacity:40%;
+    margin-bottom: 20px;
+}    
     
     
 }
@@ -508,30 +534,9 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 
 
 
-#walleybanq{
-    height: 280px;
-    width: 280px;
-    background-repeat: no-repeat;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
-#rmit{
-    height: 280px;
-    width: 280px;
-    background-repeat: no-repeat;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
-#hsbc{
-    height: 280px;
-    width: 280px;
-    background-repeat: no-repeat;
-    opacity:40%;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 #aboutTextTitle {
     font-weight: 500;
