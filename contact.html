@@ -3,24 +3,31 @@
 
 <head>
 
-<title>Welcome to rAdam23</title> 
+    <title>Welcome to rAdam23</title> 
 
-    <link rel="stylesheet" href="main.css">
-    
-    <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-    </script>
+        <link rel="stylesheet" href="main.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    </style>
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- FAVICON -->    
+        <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+<!-- GRADIENT --------------->    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
+        </script>
+
+<!-- GOOGLE FONTS --------------->    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- GOOGLE RECAPTCHA --------------->    
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+         <script> 
+             function onSubmit(token) {document.getElementById("demo-form").submit();}
+         </script>
     
 </head>
 
@@ -55,57 +62,56 @@
     
 
 <section id="herobanner">
-        <p id= "herotext">/ Contact me</p>   
+        <p id= "contentHeroText">/ Contact me</p>   
 </section>
 
 <section id="section2Content">
-<div id= "section2ContactBox">
     
-    <div id= "section2ContactWrapper">
-        <div id="contactTextTitle"> Connect with me:</div>
-        
-        <div class="contactContainer">
-            <div id="contactImgEmoji">&#x1F4E7</div> 
-            <div id="contactText">hiradam23@gmail.com</div>
+    <div id= "section2ContactBox">
+
+        <div id= "connectWithMeWrapper">
+            <div id="contactTextTitle"> Connect with me:</div>
+
+
+            <div class="connectLinkContainer">
+                <div id="contactImgEmoji">&#x1F4E7</div> 
+                <div id="contactText">hiradam23@gmail.com</div>
+            </div>
+
+            <div class="connectLinkContainer">
+                <div id="contactImgEmoji">&#x1F426</div> 
+                <div id="contactText">@rAdam23Official</div>
+            </div>
+
+            <div class="connectLinkContainer">
+                <img id="contactImgEmoji2" src="discordlogo.svg"></img> 
+                <div id="contactText">#3228</div>
+            </div>
+
+            <div class="connectLinkContainer">
+                <div id="contactImgEmoji">&#128077</div> 
+                <div id="contactText">rAdam23</div>
+            </div>
         </div>
 
-        <div class="contactContainer">
-            <div id="contactImgEmoji">&#x1F426</div> 
-            <div id="contactText">@rAdam23Official</div>
+
+        <div id= "emailMeWrapper">
+
+            <div id="contactContainerEmail">
+                <p id="contactTextTitleEmail">Email me:</p>
+
+                <input type="form" id="contactTextForm" placeholder="Your Name"> 
+
+                <input type="email" id="contactTextForm" placeholder="Email" required>
+
+                <input type="form" id="contactTextForm" placeholder="Subject" required>  
+
+                <textarea id="contactTextFormMessage"placeholder="Message.."></textarea>          
+
+                <input type="button" id="ContactSendButton" value="send">
+            </div>    
         </div>
-        
-        <div class="contactContainer">
-            <img id="contactImgEmoji2" src="discordlogo.svg"></img> 
-            <div id="contactText">#3228</div>
-        </div>
-    
-        <div class="contactContainer">
-            <div id="contactImgEmoji">&#128077</div> 
-            <div id="contactText">rAdam23</div>
-        </div>
-        
     </div>
-    
-    
-    <div id= "section2ContactWrapper2">
-        <div id="contactTextTitle">Email me:</div>
-        
-        <div id="contactContainerEmail">
-        <input type="form" id="contactTextForm" placeholder="Your Name"> 
-        
-        <input type="email" id="contactTextForm" placeholder="Email">
-        
-        <input type="form" id="contactTextForm" placeholder="Subject">  
-        
-         <input type="form" id="contactTextFormMessage" placeholder="Message..">          
-
-        <input type="button" id="sendmessage" value="send">
-        </div>
-        
-    </div>
-
-    
-</div>
 
     
 </section>

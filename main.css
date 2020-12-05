@@ -291,13 +291,6 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     
 }
 
-#herobanner{
-    height: 140px;
-    width: 100vw;
-    justify-content: center;
-    align-content: center;
-}
-
 #herotext{
     color: rgb(255, 255, 255);
     font-weight: 600;
@@ -1123,8 +1116,31 @@ li{
 }
 
 
-/* <-----  CONTACT ME ------> */
 
+
+
+
+/* <-----  CONTACT (DESKTOP) MIN-WIDTH 800PX -----------------> */
+
+@media screen and (min-width: 800px) {
+    
+
+#herobanner{
+    height: 140px;
+    width: 100vw;
+    justify-content: left;
+    align-content: center;
+}
+    
+#contentHeroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 82px;
+    margin-top: 200px;
+    margin-left: 8%;
+    font-size-adjust: auto;
+}
+    
 #section2Content {
     min-height: auto; 
     height:auto;
@@ -1132,17 +1148,18 @@ li{
     display: flex;
     justify-content: center;
 }
-
+    
 #section2ContactBox {
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    height: auto;
+    width: 80%;
+    min-width: 800px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
+    margin-top: 70px;
     font-family: 'Source Code Pro';
     font-size: 20px;
     color: #191919;
@@ -1150,9 +1167,10 @@ li{
     background-color: white;
 }
 
-#section2ContactWrapper{
+    
+#connectWithMeWrapper{
     height: auto;
-    width:50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -1160,11 +1178,84 @@ li{
 #contactTextTitle{
     font-weight: 500;
     font-size: 22px;
+    min-width: 240px;
     color: #272727;
     padding-bottom: 20px;
 }
+    
+#emailMeWrapper{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    margin-top: -20px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
-.contactContainer{
+#contactContainerEmail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+    
+#contactTextTitleEmail{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 240px;
+    display: block;
+    color: #272727;
+}
+
+#contactTextForm{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 70px;
+    width: auto;
+    max-width: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #dddddd; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+#contactTextFormMessage{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #dddddd; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+#ContactSendButton{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 80px;
+    width: 360px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #195a89;
+    margin-top: 15px;
+}
+
+.connectLinkContainer{
     height: 50px;
     width: auto;
     display: flex;
@@ -1172,11 +1263,10 @@ li{
     align-content: center;
 }
 
-/* --- ( CONTACT ME AT: ) ----*/
-
 #contactImgEmoji{
     max-height: 50px;
     max-width: 50px;
+    min-width: 50px;
     font-size: 36px;
     padding-right: 8px;  
     padding-left: 8px;  
@@ -1184,7 +1274,8 @@ li{
 }
 #contactImgEmoji2{
     height: 45px;
-    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
@@ -1194,7 +1285,8 @@ li{
 
 #contactImgEmoji2facebook{
     height: 35px;
-    width: 35px;
+    min-width: 35px;
+    max-width: 35px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 10px;
@@ -1211,34 +1303,114 @@ li{
     margin-top: 12px;
 }
 
-#contactTextfbook{
-    font-weight: 400;
-    font-size: 18px;
-    color: #2f2f2f;
-    width: auto;
-    margin-top: 16px;
+
+    
+
 }
 
 
-/* --- ( EMAIL ME AT: ) ----*/
 
-#section2ContactWrapper2{
-    height: auto;
-    width:50%;
+
+
+/* <-----  CONTACT (MOBILE) MAX-WIDTH 800PX -----------------> */
+
+@media screen and (max-width: 800px) {
+
+    
+#herobanner{
+    height: 140px;
+    width: 100vw;
+    justify-content: left;
+    align-content: center;
+}
+    
+#contentHeroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 200px;
+    margin-left: 8%;
+    border-radius: 15px;
+    font-size-adjust: auto;
+}
+    
+#section2Content {
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+    
+#section2ContactBox {
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
+    box-sizing: border-box;
+    height: auto;
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+    background-color: white;
+} 
+    
+#emailMeWrapper{
+    height: auto;
+    display: block;
+    flex-direction: column;
+    margin-top: 20px;
     vertical-align: top;
     align-items: center;
     background-color: white;
 }
 
+#connectWithMeWrapper{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+    
+.connectLinkContainer{
+    height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#contactTextTitle{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 240px;
+    color: #272727;
+    padding-bottom: 20px;
+}
+    
+    
 #contactContainerEmail{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    width: 100%;
+
+}
+
+
+#contactTextTitleEmail{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 200px;
+    display: block;
+    color: #272727;
+    margin-top: 40px; 
+    padding-bottom: 20px;
 }
 
 #contactTextForm{
@@ -1246,7 +1418,7 @@ li{
     font-weight: 400;
     font-family: sans-serif;
     height: 70px;
-    width: 330px;
+    min-width: 200px;
     border-radius: 5px;
     border: none;
     background-color: #dddddd; 
@@ -1256,34 +1428,86 @@ li{
 }
 
 #contactTextFormMessage{
+    box-sizing: border-box;
     font-size: 18px;
     font-weight: 400;
     font-family: sans-serif;
-    min-height: 110px;
-    height: auto;
-    width: 330px;
+    min-width: 200px;
     border-radius: 5px;
     border: none;
     background-color: #dddddd; 
     margin-top: 5px;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    text-align: left;
+    margin-bottom: 10px;
+    padding: 30px;
 }
 
-#sendmessage{
+#ContactSendButton{
+    box-sizing: border-box;
     -webkit-appearance: none;
     font-size: 18px;
     font-weight: 400;
     font-family: sans-serif;
     height: 80px;
-    width: 100%;
+    min-width: 220px;
     border-radius: 5px;
     border: none;
     color: white;
     background-color: #195a89;
-    padding-left: 30px;
     margin-top: 15px;
 }
+
+#contactImgEmoji{
+    max-height: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    font-size: 36px;
+    padding-right: 8px;  
+    padding-left: 8px;  
+    width: 10%;
+}
+#contactImgEmoji2{
+    height: 45px;
+    min-width: 45px;
+    max-width: 45px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 8px;
+    margin-right: 8px; 
+}
+
+#contactImgEmoji2facebook{
+    height: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+    margin-right: 12px; 
+    margin-top: 4px;
+}
+
+#contactText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #2f2f2f;
+    width: auto;
+    margin-top: 12px;
+} 
+    
+    
+}
+
+
+
+
+
+
+
+
+
+    
+
 
 
