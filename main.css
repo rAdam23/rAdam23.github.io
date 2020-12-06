@@ -377,6 +377,7 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     margin-top: 70px;    
     height: 340px;
     width: 80%;
+    min-width: 800px;
     box-sizing: border-box;
     border-radius: 15px;
     background-color: #ffffff;
@@ -389,30 +390,34 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-width: 900px;
     height: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 
 #walleybanq, #rmit, #hsbc{
-    width: 280px;
+    width: 220px;
     background-repeat: no-repeat;
-    padding-left: 30px;
-    padding-right: 30px;
     box-sizing: border-box;
 }
 
+ 
 #hsbc{
     opacity:40%;
     margin-bottom: 20px;
 } 
+   
+    
+    
     
     
     
     
 }
-
 
 
 /* <-----  PORTFOLIO (MOBILE) MAX-WIDTH 800PX -----------------> */
@@ -435,7 +440,7 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     height: auto;
     width: 80%;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
     box-sizing: border-box;
     border-radius: 15px;
     background-color: #ffffff;
