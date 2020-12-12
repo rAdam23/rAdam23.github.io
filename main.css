@@ -1,4 +1,4 @@
-#bodyindex{
+#bodyindex, #bodyabout, #bodycontact, #bodyportfolio, #bodycode, #bodylogin{
     height: auto;
     /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
     background-repeat: no-repeat;
@@ -6,104 +6,57 @@
     padding: 0px;
     margin: 0px;
     font-family: helvetica-neue, sans-serif;
-    background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
-    background-size: 400% 400%;
-    animation: gradient 95s ease infinite;
-    justify-content: center;
+}
+
+#bodyindex{
+        background: linear-gradient(65deg, #00249d, #179a00);
+        background-size: 120% 200%;
+        animation: gradient 85s ease infinite;
+        justify-content: center;
 }
 
 #bodyabout{
-    height: auto;
-    /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    padding: 0px;
-    margin: 0px;
-    font-family: helvetica-neue, sans-serif;
-    background: linear-gradient(-75deg, #e2138a, #f0651b, #f0961b, #8d004c);
-    background-size: 400% 400%;
-    animation: gradient 95s ease infinite;
-    justify-content: center;
+        background: linear-gradient(95deg, #b70062, #e8cd00);
+        background-size: 150% 200%;
+        animation: gradient 85s ease infinite;
+        justify-content: center;
+}
+
+#bodyportfolio{
+        background: linear-gradient(95deg, #6e009f, #e8cd00);
+        background-size: 150% 200%;
+        animation: gradient 85s ease infinite;
+        justify-content: center;
 }
 
 #bodycontact{
-    height: auto;
-    /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    padding: 0px;
-    margin: 0px;
-    font-family: helvetica-neue, sans-serif;
-    background: linear-gradient(115deg, #330053, #530072, #bc0091, #edb41a);
-    background-size: 400% 400%;
-    animation: gradient 60s ease infinite alternate;
-    justify-content: center;
+        background: linear-gradient(95deg, #b70062, #e8cd00);
+        background-size: 150% 200%;
+        animation: gradient 85s ease infinite;
+        justify-content: center;
 }
-
-
-
-#bodyportfolio{
-height: auto;
-/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-background-repeat: no-repeat;
-background-color: #1d1d1d;
-   padding: 0px;
-   margin: 0px;
-font-family: helvetica-neue, sans-serif;
-background: linear-gradient(-95deg, #1c75ce, #14766b, #035f1f, #144d9a);
-	background-size: 400% 400%;
-	animation: gradient 95s ease infinite;
-    justify-content: center;
-}
-
-#bodyPortfolioWalleybanque{
-    padding: 0px;
-    margin: 0px;
-    background-color: #1d1d1d;
-    font-family: helvetica-neue, sans-serif;
-    background: linear-gradient(85deg, #1d1d1d, #454545);
-    background-size: 400% 400%;
-    justify-content: center;
-}
-
-#bodyPortfolioRmit{
-    padding: 0px;
-    margin: 0px;
-    background-color: #1d1d1d;
-    font-family: helvetica-neue, sans-serif;
-    background: linear-gradient(85deg, #1d1d1d, #454545);
-    background-size: 400% 400%;
-    justify-content: center;
-}
-
 
 #bodycode{
-height: auto;
-/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-background-repeat: no-repeat;
-background-color: #ffff;
-   padding: 0px;
-   margin: 0px;
-font-family: helvetica-neue, sans-serif;
-background: linear-gradient(45deg, #a81397, #590983, #391cb2, #8300b4);
-	background-size: 400% 400%;
-	animation: gradient 95s ease infinite;
-    justify-content: center;
+        background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
+        background-size: 400% 400%;
+        animation: gradient 95s ease infinite;
+        justify-content: center;
 }
 
-
-
 #bodylogin{
-height: auto;
-/*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-background-repeat: no-repeat;
-background-color: #ffff;
-   padding: 0px;
-   margin: 0px;
-font-family: helvetica-neue, sans-serif;
-background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
-	background-size: 400% 400%;
-	animation: gradient 95s ease infinite;
+        background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
+        background-size: 400% 400%;
+        animation: gradient 95s ease infinite;
+        justify-content: center;
+}
+
+#bodyPortfolioWalleybanque, #bodyPortfolioRmit{
+    padding: 0px;
+    margin: 0px;
+    background-color: #1d1d1d;
+    font-family: helvetica-neue, sans-serif;
+    background: linear-gradient(85deg, #1d1d1d, #454545);
+    background-size: 400% 400%;
     justify-content: center;
 }
 
@@ -121,12 +74,9 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 }
 
 
-/* <----------------------------------------> */
-
-/* <-----  GLOBAL STYLES --------------------> */
-
-/* <----------------------------------------> */
-
+/* <----------------------------------------> 
+/* <-----  GLOBAL STYLES --------------------> 
+/* <--------------------------------------> */
 
 
 
@@ -149,7 +99,7 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 
 
 
-/* ---- GLOBAL STYLES  (MOBILE) -------- */
+/* ---- GLOBAL STYLES  (TABLET) MAX 800PX -------- */
 
 @media screen and (max-width: 800px) {
     
@@ -167,6 +117,23 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
 
 
 
+
+
+/* ---- GLOBAL STYLES  (MOBILE) MAX 300PX -------- */
+
+@media screen and (max-width: 800px) {
+    
+#heroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 200px;
+    margin-left: 8%;
+    border-radius: 15px;
+    font-size-adjust: auto;
+}
+
+}
 
 
 
@@ -517,6 +484,22 @@ background: linear-gradient(75deg, #10af8a, #53218e, #1f8fa3, #1f5c7c);
     box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
 }
 
+#heroimgbox{
+    background-color: black;
+    border-radius: 15px;
+    height: 500px;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+    overflow: hidden;
+    background-image: url(radm23home.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    animation-delay: 1s;
+    flex-shrink: 1;
+    
+}
 
 #section2aboutbox, #section2codebox {
     height: auto;
