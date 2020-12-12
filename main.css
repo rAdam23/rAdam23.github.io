@@ -9,44 +9,44 @@
 }
 
 #bodyindex{
-        background: linear-gradient(65deg, #00249d, #179a00);
-        background-size: 120% 200%;
-        animation: gradient 85s ease infinite;
+        background: linear-gradient(95deg, #0a2595, #6be61f);
+        background-size: 150% 200%;
+        /*animation: gradient 85s ease infinite;*/
         justify-content: center;
 }
 
 #bodyabout{
-        background: linear-gradient(95deg, #b70062, #e8cd00);
+        background: linear-gradient(95deg, #af1858, #add42a);
         background-size: 150% 200%;
-        animation: gradient 85s ease infinite;
+        /*animation: gradient 85s ease infinite;*/
         justify-content: center;
 }
 
 #bodyportfolio{
-        background: linear-gradient(95deg, #6e009f, #e8cd00);
+        background: linear-gradient(95deg, #711998, #e8cd00);
         background-size: 150% 200%;
-        animation: gradient 85s ease infinite;
+        /*animation: gradient 85s ease infinite;*/
         justify-content: center;
 }
 
 #bodycontact{
-        background: linear-gradient(95deg, #b70062, #e8cd00);
-        background-size: 150% 200%;
-        animation: gradient 85s ease infinite;
+        background: linear-gradient(95deg, #7b8b26, #2cc1c7);
+        background-size: 160% 200%;
+        /*animation: gradient 85s ease infinite;*/
         justify-content: center;
 }
 
 #bodycode{
         background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
         background-size: 400% 400%;
-        animation: gradient 95s ease infinite;
+        /*animation: gradient 85s ease infinite;*/
         justify-content: center;
 }
 
 #bodylogin{
         background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
         background-size: 400% 400%;
-        animation: gradient 95s ease infinite;
+        /*animation: gradient 85s ease infinite;*/
         justify-content: center;
 }
 
@@ -223,47 +223,7 @@
     justify-content: center;
 }
 
-#codelink:hover{
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.49);
-    border-bottom-width: 3px;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-#aboutlink:hover{
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.49);
-    border-bottom-width: 3px;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-#githublink:hover{
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.49);
-    border-bottom-width: 3px;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-
-#portfoliolink:hover{
+#codelink:hover, #aboutlink:hover, #githublink:hover, #portfoliolink:hover, #loginlink:hover{
     padding-top: 16px;
     font-size: 14px;
     font-weight: 600;
@@ -442,19 +402,8 @@
 
 
 
+/* <---------END PORTFOLIO (MOBILE)----------------> */
 /* <----------------------------------------> */
-/* <----------------------------------------> */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -520,12 +469,6 @@
 
 
 
-
-
-
-
-
-
 #aboutTextTitle {
     font-weight: 500;
     font-size: 22px;
@@ -568,7 +511,6 @@
     margin-top: 300px;
     
 }
-
 
 
 #section1loginbox{
@@ -1420,10 +1362,7 @@ li{
     margin-top: 12px;
 }
 
-
 }
-
-
 
 
 
