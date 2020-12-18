@@ -84,66 +84,7 @@
 
 @media screen and (min-width: 800px) {
 
-#heroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 82px;
-    margin-top: 200px;
-    margin-left: 8%;
-    font-size-adjust: auto;
-}
-
-}
-
-
-
-
-
-/* ---- GLOBAL STYLES  (TABLET) MAX 800PX -------- */
-
-@media screen and (max-width: 800px) {
-    
-#heroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 70px;
-    margin-top: 200px;
-    margin-left: 8%;
-    border-radius: 15px;
-    font-size-adjust: auto;
-}
-
-}
-
-
-
-
-
-/* ---- GLOBAL STYLES  (MOBILE) MAX 300PX -------- */
-
-@media screen and (max-width: 800px) {
-    
-#heroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 70px;
-    margin-top: 200px;
-    margin-left: 8%;
-    border-radius: 15px;
-    font-size-adjust: auto;
-}
-
-}
-
-
-
-
-/* <----------------------------------------> */
-
-/* ---- STYLES TO BE ADDED TO GLOBAL -------- */
-
-
-#navbar{
+nav{
     display: flex;
     align-content: center;
     color: #ffff;
@@ -153,7 +94,17 @@
     justify-content: center;
 }
 
-#logolink{
+.navbarlinks{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;  
+    padding-right:20px;
+    text-align: center;
+    align-content: center;
+    margin-top: 5px;
+}
+
+.logolink{
     padding-left: 30px;
     padding-top: 4px;
     font-weight: 600;
@@ -164,6 +115,289 @@
     font-size: 24px;
     margin-top: 10px;
 }
+
+.burger{
+    display: none;
+}
+
+.herobanner{
+    height: 140px;
+    width: 100vw;
+    justify-content: left;
+    align-content: center;
+}
+    
+.heroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 82px;
+    margin-top: 200px;
+    margin-left: 8%;
+    font-size-adjust: auto;
+}
+
+.section2{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#heroimgbox{
+    background-color: black;
+    border-radius: 15px;
+    height: 500px;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: -200px;
+    overflow: hidden;
+    background-image: url(radam23home.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+}
+
+.section2box{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+}
+
+#footerblock{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: auto;
+    flex-shrink:auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+}
+
+.footerBlock{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: auto;
+    flex-shrink:auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+#aboutTextTitle {
+    font-weight: 500;
+    font-size: 22px;
+    color: #272727;
+}
+
+#aboutText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #343434;
+    margin-top: -2px;
+}
+
+#contactMeButton{
+    font-size: 1rem;
+    text-align: center;
+    justify-content: left;
+    width: 20%;
+    font-weight: 600;   
+    border-color: black;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 2px;
+    color: #ffffff;
+    background-color: rgba(57, 77, 113, 0.63);
+    text-decoration: none;
+}
+
+
+}
+
+
+
+/* ---- GLOBAL STYLES (MOBILE)  MAX 800PX -------- */
+
+@media screen and (max-width: 800px) {
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    align-content: center;
+    color: #ffff;
+    flex-direction: row;
+    background-color: none;
+    padding: 8px;
+    justify-content: center;
+}
+
+.logolink{
+    padding-left: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    flex-grow:4; 
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.navbarlinks{
+    display:none;
+}
+
+.burger{
+    margin-top: 12px;;
+    padding-right: 15px;;
+}
+
+.line1, .line2, .line3{
+    width: 25px;
+    height: 3px;
+    margin: 7px;
+    background-color: white;
+}
+
+.herobanner{
+    height: 10vw;
+    width: 100vw;
+    justify-content: left;
+    align-content: center;
+}
+
+.heroText{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 2.0rem;
+    margin-top: 85px;
+    margin-left: 7%;
+    font-size-adjust: auto;
+    margin-bottom: 10px;
+}
+
+.section2{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#heroimgbox{
+    height: 65vh;
+    width: 75%;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 0px;
+    overflow: hidden;
+    background-image: url(radam23home.png);
+    background-size:310%;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+}
+
+.section2box{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 10%;
+}
+
+.footerBlock{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: auto;
+    flex-shrink:auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+#aboutTextTitle {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #272727;
+}
+
+#aboutText{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #343434;
+    margin-top: -2px;
+}
+
+#contactMeButton{
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;   
+    border-color: black;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 2px;
+    color: #ffffff;
+    background-color: rgba(57, 77, 113, 0.63);
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* <----------------------------------------> */
+/* <----------------------------------------> */
+/* <----------------------------------------> */
+/* <----------------------------------------> */
+/* <----------------------------------------> */
+/* ---- STYLES TO BE ADDED TO GLOBAL -------- */
 
 #returnBackLink{
     margin-left: 12px;
@@ -200,16 +434,6 @@
     margin-top: 10px;
 }
 
-#navbarlinks{
-    display: flex;
-    flex-direction: row;
-    margin-left: 40px;  
-    padding-right:20px;
-    text-align: center;
-    align-content: center;
-    margin-top: 5px;
-
-}
 
 #codelink, #aboutlink, #githublink, #portfoliolink, #loginlink {
     padding-top: 16px;
@@ -286,7 +510,7 @@
 
 
 
-/* <-----  PORTFOLIO (DESKTOP) MIN-WIDTH 800PX -----------------> */
+/* <-----  PORTFOLIO (DESKTOP) MIN-WIDTH 800PX -------------> */
 
 @media screen and (min-width: 800px) {
 
@@ -347,10 +571,11 @@
 }
 
 
-/* <-----  PORTFOLIO (MOBILE) MAX-WIDTH 800PX -----------------> */
+/* <-----  PORTFOLIO (MOBILE) MAX-WIDTH 800PX --------------> */
 
 
 @media screen and (max-width: 800px) {
+
 
 
 #section2portfolio{
@@ -408,91 +633,11 @@
 
 
 
-#section2{
-    min-height: 900px; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
 
 
 
-#heroimgbox{
-    background-color: black;
-    border-radius: 15px;
-    height: 500px;
-    width: 70%;
-    margin-top: 100px;
-    margin-left: 100px;
-    overflow: hidden;
-    background-image: url(radm23home.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-}
-
-#heroimgbox{
-    background-color: black;
-    border-radius: 15px;
-    height: 500px;
-    width: 70%;
-    margin-top: 100px;
-    margin-left: 100px;
-    overflow: hidden;
-    background-image: url(radm23home.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    animation-delay: 1s;
-    flex-shrink: 1;
-    
-}
-
-#section2aboutbox, #section2codebox {
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-}
 
 
-
-#aboutTextTitle {
-    font-weight: 500;
-    font-size: 22px;
-    color: #272727;
-}
-
-#aboutText{
-    font-weight: 400;
-    font-size: 18px;
-    color: #343434;
-    margin-top: -2px;
-}
-
-#footerblock{
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: auto;
-    flex-shrink:auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 190px;
-}
 
 
 #footertext{
@@ -597,7 +742,6 @@
     margin-top: -7px;
     margin-left: 10px;
     margin-right: 20px;
-    
 }
 
 #aboutcontactlink:hover{
@@ -1193,13 +1337,7 @@ li{
 @media screen and (min-width: 800px) {
     
 
-#herobanner{
-    height: 140px;
-    width: 100vw;
-    justify-content: left;
-    align-content: center;
-}
-    
+
 #section2Content {
     min-height: auto; 
     height:auto;
@@ -1371,12 +1509,6 @@ li{
 @media screen and (max-width: 800px) {
 
     
-#herobanner{
-    height: 140px;
-    width: 100vw;
-    justify-content: left;
-    align-content: center;
-}
     
 #section2Content {
     min-height: auto; 
@@ -1410,7 +1542,6 @@ li{
     display: block;
     flex-direction: column;
     margin-top: 20px;
-    vertical-align: top;
     align-items: center;
     background-color: white;
 }
