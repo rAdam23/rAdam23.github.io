@@ -230,6 +230,36 @@ nav{
     text-decoration: none;
 }
 
+.footertext{
+    font-size: 12px;
+    color: white;
+    opacity: 50%;
+    text-decoration: none;
+}
+
+
+.portfolioComingSoonLink, .portfolioImageLink{
+    width: 18vw;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.portfolioComingSoonLink{
+    opacity:40%;
+    margin-bottom: 20px;
+} 
+
+.portfolioLinkContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;;
+}
+
+
+
 
 }
 
@@ -324,6 +354,8 @@ nav{
 .section2box{
     height: auto;
     width: 85%;
+    margin-top: 70px; 
+    padding: 10%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -331,11 +363,10 @@ nav{
     border-radius: 10px;
     background-color: white;
     box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
     font-family: 'Source Code Pro';
     font-size: 20px;
     color: #191919;
-    padding: 10%;
+    align-items: left;
 }
 
 .footerBlock{
@@ -382,11 +413,36 @@ nav{
     margin-right: auto;
 }
 
-
-
+.footertext{
+    font-size: 12px;
+    color: white;
+    opacity: 50%;
+    text-decoration: none;
 }
 
 
+.portfolioImageLink, .portfolioComingSoonLink{
+    width: 40vw;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+ 
+.portfolioComingSoonLink{
+    opacity:40%;
+    margin-bottom: 20px;
+} 
+
+.portfolioLinkContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+
+
+}
 
 
 
@@ -550,17 +606,7 @@ nav{
 }
 
 
-#walleybanq, #rmit, #hsbc{
-    width: 220px;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
 
- 
-#hsbc{
-    opacity:40%;
-    margin-bottom: 20px;
-} 
    
     
     
@@ -600,27 +646,9 @@ nav{
     justify-content: center;
 }
 
-#portfolioboxrow1{
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
 
 
-#walleybanq, #rmit, #hsbc{
-    max-width: 240px;
-    min-width: 240px;
-    background-repeat: no-repeat;
-    margin-bottom: -30px;
-}
 
-#hsbc{
-    opacity:40%;
-    margin-bottom: 20px;
-}    
     
     
 }
@@ -640,12 +668,7 @@ nav{
 
 
 
-#footertext{
-    font-size: 12px;
-    color: white;
-    opacity: 50%;
-    
-}
+
 
 #section1login{
     display: flex;

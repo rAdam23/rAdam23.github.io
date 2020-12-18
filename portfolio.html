@@ -3,43 +3,51 @@
     
 <head>
 
-    <title>Welcome to rAdam23</title> 
+<title>Welcome to rAdam23</title> 
 
-<!-- VIEWPORT --> 
-    
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    
-<!-- STYLESHEET --> 
-    
-        <link rel="stylesheet" href="main.css">
+        <!-- VIEWPORT --> 
 
-<!-- FAVICON -->    
-        <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <!-- STYLESHEET --> 
+            
+                <link rel="stylesheet" href="main.css">
 
-<!-- GRADIENT --------------->    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-        </script>
+        <!-- FAVICON -->    
+                <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+            
+        <!-- APPLE ICONS --------------->    
 
-<!-- GOOGLE FONTS --------------->    
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        </style>
+                <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+                <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
+            
+        <!-- GRADIENT --------------->    
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
+                </script>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- GOOGLE FONTS --------------->    
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+                </style>
 
-<!-- GOOGLE RECAPTCHA --------------->    
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+                <link rel="preconnect" href="https://fonts.gstatic.com"> 
+                <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
 
-         <script> 
-             function onSubmit(token) {document.getElementById("demo-form").submit();}
-         </script>
-    
+        <!-- GOOGLE RECAPTCHA --------------->    
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+
+                <script> 
+                    function onSubmit(token) {document.getElementById("demo-form").submit();}
+                </script>
+            
 </head>
 
-
+<!-- END OF HEAD --------------------------------------->    
+<!-- END OF HEAD --------------------------------------->    
     
-    
+   
 <body id="bodyportfolio"> 
 
     <div id="gradient"/>
@@ -71,36 +79,32 @@
          
     </nav>
     
-
-<!--------- CSS (LINE 351) ------------------------------>
-<!--------- PORTFOLIO PAGE ----------------------------------->
-
     
-<section id="herobanner">
+<section class="herobanner">
         <p class= "heroText">/ Portfolio</p>   
 </section>
 
     
-<section id="section2portfolio">
-    <div id= "section2portfoliobox">
-        <div id="portfolioboxrow1">
+<section class="section2">
+    <div class= "section2box">
+        <div class="portfolioLinkContainer">
             
-            <a href="rmit.html"><img id="rmit" src="rmitlogo.svg"></a>
+            <a href="rmit.html"><img class="portfolioImageLink" src="rmitlogo.svg"></a>
             
-            <a href="walleybanque.html"> <img id="walleybanq" src="walleylogo.svg"></a>
+            <a href="walleybanque.html"> <img class="portfolioImageLink" src="walleylogo.svg"></a>
             
-            <a href="#"><img id="hsbc" src="HSBCLogoComingSoon.svg">
+            <a href="#"><img class="portfolioComingSoonLink" src="HSBCLogoComingSoon.svg"></a>
         </div>
     </div>
 </section>
     
     
-<section id="footerblock">    
-<p id="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
-    
+<section class="footerBlock">    
+    <p class="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
+        
 </section>    
-    
-    
+        
+      
 </body>
-    
-    </html>
+
+</html>
