@@ -3,43 +3,51 @@
     
 <head>
 
-    <title>Welcome to rAdam23</title> 
+<title>Welcome to rAdam23</title> 
 
-<!-- VIEWPORT --> 
-    
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    
-<!-- STYLESHEET --> 
-    
-        <link rel="stylesheet" href="main.css">
+        <!-- VIEWPORT --> 
 
-<!-- FAVICON -->    
-        <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <!-- STYLESHEET --> 
+            
+                <link rel="stylesheet" href="main.css">
 
-<!-- GRADIENT --------------->    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-        </script>
+        <!-- FAVICON -->    
+                <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+            
+        <!-- APPLE ICONS --------------->    
 
-<!-- GOOGLE FONTS --------------->    
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        </style>
+                <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+                <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
+            
+        <!-- GRADIENT --------------->    
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
+                </script>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- GOOGLE FONTS --------------->    
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+                </style>
 
-<!-- GOOGLE RECAPTCHA --------------->    
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+                <link rel="preconnect" href="https://fonts.gstatic.com"> 
+                <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
 
-         <script> 
-             function onSubmit(token) {document.getElementById("demo-form").submit();}
-         </script>
-    
+        <!-- GOOGLE RECAPTCHA --------------->    
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+
+                <script> 
+                    function onSubmit(token) {document.getElementById("demo-form").submit();}
+                </script>
+            
 </head>
 
-
+<!-- END OF HEAD --------------------------------------->    
+<!-- END OF HEAD --------------------------------------->    
     
-    
+   
 <body id="bodycontact"> 
 
     <div id="gradient"/>
@@ -49,17 +57,17 @@
         
             <div class="navbarlinks">
                 
-                    <a href="about.html" id="aboutlink">about</a>
-                    
-                    <a href="portfolio.html" id="portfoliolink">portfolio</a>
+                    <a href="about.html" class="navlink">about</a>
+                        
+                    <a href="portfolio.html" class="navlink">portfolio</a>
                     <!--
                     <a href="code.html" id="codelink">code</a>
                     -->
-                    <a href="https://github.com/rAdam23" target="_blank" id="githublink">github</a>
+                    <a href="https://github.com/rAdam23" target="_blank" class="navlink">github</a>
                     
-                    <a href="contact.html" id="contactlink">contact</a>
+                    <a href="contact.html" class="navContactLink">contact</a>
                     <!--
-                    <a href="login.html" id="loginlink">login</a>
+                    <a href="login.html" class="navlink">login</a>
                     -->
             </div>
             
@@ -68,40 +76,40 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-         
+            
     </nav>
     
 
-<section id="herobanner">
+<section class="herobanner">
         <p class= "heroText">/ Contact me</p>   
 </section>
 
-<section id="section2Content">
+<section class="section2">
     
-    <div id= "section2ContactBox">
+    <div class= "section2boxContact">
 
         <div id= "connectWithMeWrapper">
+
             <div id="contactTextTitle"> Connect with me:</div>
 
+                <div class="connectLinkContainer">
+                    <div id="contactImgEmoji">&#x1F4E7</div> 
+                    <div id="contactText">hiradam23@gmail.com</div>
+                </div>
 
-            <div class="connectLinkContainer">
-                <div id="contactImgEmoji">&#x1F4E7</div> 
-                <div id="contactText">hiradam23@gmail.com</div>
-            </div>
+                <div class="connectLinkContainer">
+                    <div id="contactImgEmoji">&#x1F426</div> 
+                    <div id="contactText">@rAdam23Official</div>
+                </div>
 
-            <div class="connectLinkContainer">
-                <div id="contactImgEmoji">&#x1F426</div> 
-                <div id="contactText">@rAdam23Official</div>
-            </div>
+                <div class="connectLinkContainer">
+                    <img id="contactImgEmoji2" src="discordlogo.svg"></img> 
+                    <div id="contactText">#3228</div>
+                </div>
 
-            <div class="connectLinkContainer">
-                <img id="contactImgEmoji2" src="discordlogo.svg"></img> 
-                <div id="contactText">#3228</div>
-            </div>
-
-            <div class="connectLinkContainer">
-                <div id="contactImgEmoji">&#128077</div> 
-                <div id="contactText">rAdam23</div>
+                <div class="connectLinkContainer">
+                    <div id="contactImgEmoji">&#128077</div> 
+                    <div id="contactText">rAdam23</div>
             </div>
         </div>
 
@@ -128,8 +136,8 @@
 </section>
     
     
-<section id="footerblock">    
-<p id="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
+<section class="footerBlock">    
+<p class="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
     
 </section>    
     

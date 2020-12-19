@@ -94,16 +94,6 @@ nav{
     justify-content: center;
 }
 
-.navbarlinks{
-    display: flex;
-    flex-direction: row;
-    margin-left: 40px;  
-    padding-right:20px;
-    text-align: center;
-    align-content: center;
-    margin-top: 5px;
-}
-
 .logolink{
     padding-left: 30px;
     padding-top: 4px;
@@ -116,8 +106,61 @@ nav{
     margin-top: 10px;
 }
 
+.navbarlinks{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;  
+    padding-right:20px;
+    text-align: center;
+    align-content: center;
+    margin-top: 5px;
+}
+
+.navlink{
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; 
+    margin-right: 15px;
+    margin-left: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+.navlink:hover{
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.49);
+    border-bottom-width: 3px;
+}
+
+.navContactLink{
+    font-size: 14px;
+    font-weight: 600;   
+    border-color: #ffff;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: rgba(255, 255, 255, 0.24);
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.navContactLink:hover{
+    background-color: rgba(255, 255, 255, 0.32);
+}
+
 .burger{
     display: none;
+    cursor: pointer;
 }
 
 .herobanner{
@@ -146,6 +189,16 @@ nav{
     justify-content: center;
 }
 
+.section1{
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
 #heroimgbox{
     background-color: black;
     border-radius: 15px;
@@ -155,11 +208,22 @@ nav{
     margin-left: -200px;
     overflow: hidden;
     background-image: url(radam23home.png);
-    background-size:cover;
+    background-size:180%;
     background-repeat: no-repeat;
     box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
 }
 
+.Section1ImgBox{
+    height: 450px;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
 .section2box{
     height: auto;
     width: 80%;
@@ -258,10 +322,88 @@ nav{
     justify-content: space-around;;
 }
 
+.section2boxContact{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+}
+
+#connectWithMeWrapper{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#emailMeWrapper{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    margin-top: -20px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#contactTextTitle{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 240px;
+    color: #272727;
+    padding-bottom: 20px;
+}
+
+#contactTextTitleEmail{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 240px;
+    display: block;
+    color: #272727;
+}
+
+#contactTextForm, #contactTextFormMessage{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 70px;
+    min-width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dddddd; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+#contactTextFormMessage{
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+
+
 
 
 
 }
+
+
+
 
 
 
@@ -292,16 +434,55 @@ nav{
     text-decoration: none;
     font-size: 1.2rem;
     margin-top: 20px;
+    transform: translateX(0%);
 }
 
 .navbarlinks{
-    display:none;
+    z-index: 1;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0vh;
+    right: 0px; 
+    padding-top: 50px; 
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(13, 31, 65);
+    transform: translateX(100%);
+}
+
+.navlink, .navContactLink{
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; 
 }
 
 .burger{
-    margin-top: 12px;;
-    padding-right: 15px;;
+    z-index: 2;
+    margin-top: 12px;
+    padding-right: 15px;
+    cursor: pointer;
 }
+
+.navactive{
+    transform: translateX(0%);
+}
+
+@keyframes navlinkfade{
+    from{
+        opacity:0;
+        transform:translateX(50px)
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px)
+    }
+
+}
+
 
 .line1, .line2, .line3{
     width: 25px;
@@ -327,6 +508,28 @@ nav{
     margin-bottom: 10px;
 }
 
+.section1{
+    min-height: auto; 
+    height:auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section1ImgBox{
+    margin-top: 40px;
+    height: 450px;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
+}
 .section2{
     min-height: auto; 
     height: auto;
@@ -346,7 +549,7 @@ nav{
     margin-left: 0px;
     overflow: hidden;
     background-image: url(radam23home.png);
-    background-size:310%;
+    background-size:cover;
     background-repeat: no-repeat;
     box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
 }
@@ -442,7 +645,129 @@ nav{
 
 
 
+.section2boxContact{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
 }
+
+
+#connectWithMeWrapper{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#emailMeWrapper{
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-top: -20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#contactTextTitle{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 240px;
+    color: #272727;
+    padding-bottom: 20px;
+}
+
+#contactText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #2f2f2f;
+    width: auto;
+    margin-top: 12px;
+} 
+
+#section2ContactBox {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+    margin-top: 70px; 
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    color: #191919;
+    padding: 50px;
+    background-color: white;
+} 
+
+#contactTextTitleEmail{
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 240px;
+    display: block;
+    color: #272727;
+}
+
+#ContactSendButton{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 80px;
+    min-width: 220px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #195a89;
+    margin-top: 15px;
+}
+
+#contactTextForm, #contactTextFormMessage{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    height: 70px;
+    min-width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dddddd; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+#contactTextFormMessage{
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+
+
+
+
+}
+
+
+
 
 
 
@@ -491,78 +816,17 @@ nav{
 }
 
 
-#codelink, #aboutlink, #githublink, #portfoliolink, #loginlink {
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-    align-content: center;
-    justify-content: center;
-}
-
-#codelink:hover, #aboutlink:hover, #githublink:hover, #portfoliolink:hover, #loginlink:hover{
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.49);
-    border-bottom-width: 3px;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-#contactlink {
-    font-size: 14px;
-    font-weight: 600;   
-    border-color: #ffff;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-decoration: none;
-    color: white;
-    padding-left: 13px;
-    padding-right: 13px;
-    background-color: rgba(255, 255, 255, 0.24);
-    margin-top: 4px;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-#contactlink:hover{
-    background-color: rgba(255, 255, 255, 0.32);
-    
-}
-
-#loginlink:hover{
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.49);
-    border-bottom-width: 3px;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-    
-}
 
 
 
-/* <----------------------------------------> */
+
+
+
+
 
 /* <-----  PORTFOLIO PAGE -------------------> */
 
 /* <----------------------------------------> */
-
-
 
 
 
@@ -605,14 +869,6 @@ nav{
     padding-right: 5%;
 }
 
-
-
-   
-    
-    
-    
-    
-    
     
 }
 
@@ -647,29 +903,19 @@ nav{
 }
 
 
-
-
-    
-    
 }
 
 
 
-/* <---------END PORTFOLIO (MOBILE)----------------> */
+
+
+
+/* <---------LOGIN PAGE----------------> */
 /* <----------------------------------------> */
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*
 #section1login{
     display: flex;
     height:auto;
@@ -745,6 +991,7 @@ nav{
     background: #006d9f;
     
 }
+*/
 
 #aboutcontactlink{
     font-size: 14px;
@@ -793,27 +1040,7 @@ nav{
 
 /* <-----  CASE STUDY SECTION 1 ------> */
 
-.Section1{
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
 
-.Section1ImgBox{
-    height: 450px;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
 
 .Section1ContainerWalleybanque{
     display: flex;
@@ -1369,52 +1596,12 @@ li{
     justify-content: center;
 }
     
-#section2ContactBox {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    height: auto;
-    width: 80%;
-    min-width: 800px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px;
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-    background-color: white;
-}
+
 
     
-#connectWithMeWrapper{
-    height: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
 
-#contactTextTitle{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
-    color: #272727;
-    padding-bottom: 20px;
-}
     
-#emailMeWrapper{
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    margin-top: -20px;
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-}
+
 
 #contactContainerEmail{
     display: flex;
@@ -1422,14 +1609,7 @@ li{
     width: 100%;
 
 }
-    
-#contactTextTitleEmail{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
-    display: block;
-    color: #272727;
-}
+
 
 #contactTextForm{
     font-size: 18px;
@@ -1541,24 +1721,7 @@ li{
     justify-content: center;
 }
     
-#section2ContactBox {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    height: auto;
-    width: 80%;
-    min-width: 300px;
-    max-width: 500px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-    background-color: white;
-} 
+
     
 #emailMeWrapper{
     height: auto;
@@ -1601,58 +1764,8 @@ li{
 }
 
 
-#contactTextTitleEmail{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 200px;
-    display: block;
-    color: #272727;
-    margin-top: 40px; 
-    padding-bottom: 20px;
-}
 
-#contactTextForm{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 70px;
-    min-width: 200px;
-    border-radius: 5px;
-    border: none;
-    background-color: #dddddd; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding-left: 30px;
-}
 
-#contactTextFormMessage{
-    box-sizing: border-box;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    min-width: 200px;
-    border-radius: 5px;
-    border: none;
-    background-color: #dddddd; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 30px;
-}
-
-#ContactSendButton{
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 80px;
-    min-width: 220px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background-color: #195a89;
-    margin-top: 15px;
-}
 
 #contactImgEmoji{
     max-height: 50px;
@@ -1686,13 +1799,7 @@ li{
     margin-top: 4px;
 }
 
-#contactText{
-    font-weight: 400;
-    font-size: 18px;
-    color: #2f2f2f;
-    width: auto;
-    margin-top: 12px;
-} 
+
     
     
 }
