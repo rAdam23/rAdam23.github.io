@@ -6,6 +6,7 @@
     padding: 0px;
     margin: 0px;
     font-family: helvetica-neue, sans-serif;
+    overflow-x: hidden;
 }
 
 #bodyindex{
@@ -61,19 +62,6 @@
 }
 
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
 /* <----------------------------------------> 
 /* <-----  GLOBAL STYLES --------------------> 
 /* <--------------------------------------> */
@@ -83,6 +71,7 @@
 /* ---- GLOBAL STYLES  (DESKTOP) MIN 800PX -------- */
 
 @media screen and (min-width: 800px) {
+
 
 nav{
     display: flex;
@@ -160,23 +149,29 @@ nav{
 
 .burger{
     display: none;
-    cursor: pointer;
 }
 
 .herobanner{
     height: 140px;
     width: 100vw;
-    justify-content: left;
-    align-content: center;
+    text-align: left;
 }
     
 .heroText{
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 82px;
-    margin-top: 200px;
-    margin-left: 8%;
-    font-size-adjust: auto;
+    margin-top: 160px;
+    text-align: center;
+}
+
+.heroTextLanding{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 82px;
+    margin-top: 160px;
+    text-align: left;
+    margin-left: 120px;
 }
 
 .section2{
@@ -189,6 +184,31 @@ nav{
     justify-content: center;
 }
 
+.section2Landing{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+    padding-left: 170px;
+}
+
+#heroimgbox{
+    background-color: black;
+    border-radius: 15px;
+    height: 60vh;
+    width: 60vw;
+    max-width: 1200px;
+    margin-top: 80px;
+    overflow: hidden;
+    background-image: url(radam23home.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
+}
+
 .section1{
     min-height: auto; 
     height:auto;
@@ -197,20 +217,6 @@ nav{
     flex-direction: row;
     align-content: center;
     justify-content: center;
-}
-
-#heroimgbox{
-    background-color: black;
-    border-radius: 15px;
-    height: 500px;
-    width: 70%;
-    margin-top: 100px;
-    margin-left: -200px;
-    overflow: hidden;
-    background-image: url(radam23home.png);
-    background-size:180%;
-    background-repeat: no-repeat;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
 }
 
 .Section1ImgBox{
@@ -227,6 +233,7 @@ nav{
 .section2box{
     height: auto;
     width: 80%;
+    max-width: 1000px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -303,7 +310,7 @@ nav{
 
 
 .portfolioComingSoonLink, .portfolioImageLink{
-    width: 18vw;
+    width: 200px;
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -325,6 +332,7 @@ nav{
 .section2boxContact{
     height: auto;
     width: 80%;
+    max-width: 1000px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -411,9 +419,6 @@ nav{
 
 @media screen and (max-width: 800px) {
 
-body{
-    overflow-x: hidden;
-}
 
 nav{
     display: flex;
@@ -434,23 +439,24 @@ nav{
     text-decoration: none;
     font-size: 1.2rem;
     margin-top: 20px;
-    transform: translateX(0%);
 }
 
 .navbarlinks{
-    z-index: 1;
-    position:absolute;
+    display: none;
+}
+ 
+/*position:absolute;
     display: flex;
     flex-direction: column;
     top: 0vh;
     right: 0px; 
     padding-top: 50px; 
     align-items: center;
-    width: 50%;
+    width: 30%;
     height: 100vh;
     background-color: rgb(13, 31, 65);
     transform: translateX(100%);
-}
+}*/
 
 .navlink, .navContactLink{
     padding: 40px;
@@ -464,11 +470,11 @@ nav{
     z-index: 2;
     margin-top: 12px;
     padding-right: 15px;
-    cursor: pointer;
 }
 
 .navactive{
     transform: translateX(0%);
+    opacity: 0;
 }
 
 @keyframes navlinkfade{
@@ -504,8 +510,17 @@ nav{
     font-size: 2.4rem;
     margin-top: 85px;
     margin-left: 7%;
-    font-size-adjust: auto;
     margin-bottom: 10px;
+}
+
+.heroTextLanding{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-top: 85px;
+    margin-left: 7%;
+    text-align: left;
+    margin-bottom:10px;
 }
 
 .section1{
@@ -531,6 +546,16 @@ nav{
     margin-bottom: 70px;
 }
 .section2{
+    min-height: auto; 
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.section2Landing{
     min-height: auto; 
     height: auto;
     width: 100vw;
