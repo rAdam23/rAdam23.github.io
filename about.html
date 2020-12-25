@@ -1,70 +1,126 @@
 <!DOCTYPE html>
-
+<Html>
+    
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+
+<title>Welcome to rAdam23</title> 
+
+        <!-- VIEWPORT --> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <!-- STYLESHEET --> 
+            
+                <link rel="stylesheet" href="main.css">
+
+        <!-- FAVICON -->    
+                <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+            
+        <!-- APPLE ICONS --------------->    
+
+                <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+                <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
+            
+        <!-- GRADIENT --------------->    
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
+                </script>
+
+        <!-- GOOGLE FONTS --------------->    
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+                </style>
+
+                <link rel="preconnect" href="https://fonts.gstatic.com"> 
+                <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <!-- GOOGLE RECAPTCHA --------------->    
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+
+                <script> 
+                    function onSubmit(token) {document.getElementById("demo-form").submit();}
+                </script>
+            
 </head>
 
-<body class="body-about">
-<nav>
+<!-- END OF HEAD --------------------------------------->    
+<!-- END OF HEAD --------------------------------------->    
+    
+    
+<body id="bodyabout"> 
+    
+    <div id="gradient"/>
 
-    <div class="nav-logo">
-        <a href="index.html">rAdam23</a>
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+    <nav>
+        <a href="index.html" class="logolink">rAdam23</a>
+        
+            <div class="navbarlinks">
+                
+                    <a href="about.html" class="navlink">about</a>
+                     
+                    <a href="portfolio.html" class="navlink">portfolio</a>
+                    <!--
+                    <a href="code.html" id="codelink">code</a>
+                    -->
+                    <a href="https://github.com/rAdam23" target="_blank" class="navlink">github</a>
+                    
+                    <a href="contact.html" class="navContactLink">contact</a>
+                    <!--
+                    <a href="login.html" class="navlink">login</a>
+                    -->
+            </div>
+            
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+         
+            <script src="app.js"></script>
+    </nav>
+        
 
-<section class="content-section">
-
-    <div class="aboutPage-content-box-heading">/ About</div>
-    <div class="aboutPage-content-box">
-        <h3>Species:</h3>
-        <br>
-        <p>Ux Ui designer that has evolved to hand code sites & learn programming languages.</p>
-        <br>
-        <br>
-        <h3>Diet:</h3>
-        <br>
-        <p>Can be found on a diet of chocolate and coffee</p>
-        <br>
-        <br>
-        <h3>Hours:</h3>
-        <br>
-        <p>(Mostly nocturnal)</p>
-        <br>
-        <br>
-        <h3>Languages spoken:</h3>
-        <br>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-        </ul> 
-        <br>
-        <br>
-        <h3>How to find:</h3>
-        <div class="aboutPage-contact-button">contact</div>
-
-
-
-
-
-    </div>
-
-
+<section class="herobanner">
+        <p class= "heroText">/ About me</p>   
 </section>
 
+    
+<section class="section2">
+    <div class= "section2box">
+        <p id="aboutTextTitle">Species:</p>
+            <p id="aboutText">Ux Ui designer that has evolved to hand code sites & learn programming languages (currently resides in Australia)<span id="emoji"> &#x1F1E6;&#x1F1FA;</span> )</p> 
+        <br>
+            <p id="aboutTextTitle">Diet:</p>
+            <p id="aboutText">Can be found on a diet of coffee and chocolate <span id="emoji"> &#127851; &#x2615;</span></p>
+        <br>
+            <p id="aboutTextTitle">Hours:</p>
+            <p id="aboutText">(Mostly nocturnal)</p>
+        <br>
+            <p id="aboutTextTitle">Languages spoken:</p>
+            <ul id="aboutText">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        <br>
+            <div id="aboutTextTitle">How to find:</div>
+        <br>
+        <a href="contact.html" id="contactMeButton">
+            <div>
+                <p>contact</p>
+            </div>
+        </a>   
+    </div>
+    </section>
+    
+    
+<section class="footerBlock">    
+<p class="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
+    
+</section>    
+    
+    
 </body>
-
-
+    
 </html>
