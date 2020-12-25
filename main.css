@@ -1,1839 +1,337 @@
-#bodyindex, #bodyabout, #bodycontact, #bodyportfolio, #bodycode, #bodylogin{
-    height: auto;
-    /*    background-image: linear-gradient(#3c00ad, #9917d3,#7c17d3, #e24500, #ff9519);*/
-    background-repeat: no-repeat;
-    background-color: #ffffff;
+*{
+    margin:0px;
     padding: 0px;
-    margin: 0px;
-    font-family: helvetica-neue, sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-index{
+    background-image: linear-gradient(180deg, rgb(18, 31, 110), rgb(129, 185, 118));
+}
+
+.body-about{
+    background-image: linear-gradient(180deg, rgb(136, 41, 93), rgb(226, 165, 95));
+}
+
+.body-portfolio{
+    background-image: linear-gradient(180deg, rgb(85, 39, 129), rgb(124, 181, 214));
+}
+
+.body-contact{
+    background-image: linear-gradient(180deg, rgb(32, 109, 90), rgb(145, 201, 233));
+}
+
+.nav-logo a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+nav{
+    height:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    width: 34%;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: .8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links li{
+    justify-content: space-around;    
+    list-style: none;
+}
+
+.burger{
+    display:none;
+    cursor: pointer;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: top;
+}
+
+.landingPage-content-box-heading{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: white;
+    margin-bottom: 40px;
+    margin-top:100px;
+}
+
+.landingPage-content-box{
+    height:50vh;
+    width:55%;
+    max-width: 1000px;
+    background-color: rgb(34, 34, 34);
+    background-image: url(radam23-landing-img.png);
+    background-size: cover;
+    filter: drop-shadow(rgba(0, 0, 0, 0.342) 10px 12px 5px);
+    border-radius: 15px;
+    margin-bottom:80px;
+}
+
+.aboutPage-content-box-heading{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: white;
+    margin-bottom: 40px;
+    margin-top:100px;
+}
+
+.aboutPage-content-box{
+    min-height:300px;
+    width:50%;
+    max-width: 1000px;
+    background-color: white;
+    background-size: cover;
+    filter: drop-shadow(rgba(0, 0, 0, 0.342) 10px 12px 5px);
+    border-radius: 15px;
+    padding:50px;
+    margin-bottom:80px;
+}
+
+.content-box{
+    height:400px;
+    width:80%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 15px;
+    margin-bottom:80px;
+}
+
+h3{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p, li{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+ul{
+    margin-left:20px;
+}
+
+.aboutPage-contact-button{
+    margin-top:20px;
+    width: 120px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size:15px;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: rgb(94, 104, 138);
+    border-radius: 7px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.aboutPage-contact-button:hover{
+    background-color: rgb(64, 77, 117);
+}
+
+.portfolioPage-content-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    min-height:300px;
+    width:70%;
+    max-width: 1000px;
+    background-color: white;
+    filter: drop-shadow(rgba(0, 0, 0, 0.342) 10px 12px 5px);
+    border-radius: 15px;
+    padding:30px;
+    margin-bottom:80px;
+}
+
+#walley, #rmit, #hsbc{
+    width: 21vw;
+    max-width: 200px;
+    min-width: 180px;
+}
+
+.contactPage-content-box-heading{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: white;
+    margin-bottom: 40px;
+    margin-top:100px;
+}
+
+.contactPage-content-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-height:300px;
+    width:50%;
+    max-width: 1000px;
+    background-color: white;
+    filter: drop-shadow(rgba(0, 0, 0, 0.342) 10px 12px 5px);
+    border-radius: 15px;
+    padding:30px;
+    margin-bottom:80px;
+}
+
+
+.contactPage-social-block{
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-logo-image{
+    width:40px;
+    margin-right: 20px;
+}
+
+.contact-logo-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding:20px;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.contact-logo-wrapper:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 9px;
+    
+}
+
+#walley:hover, #rmit:hover, #hsbc:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 9px;
+}
+
+.portfolioPage-content-box image{
+    width:30%;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding:0px;
+}
+
+
+
+/* <===========  MOBILE max-768px  ========================> */
+/*<=============          ========================> */
+
+@media screen and (max-width:768px){
+
+
+.nav-links{
+    display: none;
+}
+
+.body-index{
     overflow-x: hidden;
 }
 
-#bodyindex{
-        background: linear-gradient(95deg, #0a2595, #6be61f);
-        background-size: 150% 200%;
-        /*animation: gradient 85s ease infinite;*/
-        justify-content: center;
-}
-
-#bodyabout{
-        background: linear-gradient(95deg, #af1858, #add42a);
-        background-size: 150% 200%;
-        /*animation: gradient 85s ease infinite;*/
-        justify-content: center;
-}
-
-#bodyportfolio{
-        background: linear-gradient(95deg, #711998, #e8cd00);
-        background-size: 150% 200%;
-        /*animation: gradient 85s ease infinite;*/
-        justify-content: center;
-}
-
-#bodycontact{
-        background: linear-gradient(95deg, #7b8b26, #2cc1c7);
-        background-size: 160% 200%;
-        /*animation: gradient 85s ease infinite;*/
-        justify-content: center;
-}
-
-#bodycode{
-        background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
-        background-size: 400% 400%;
-        /*animation: gradient 85s ease infinite;*/
-        justify-content: center;
-}
-
-#bodylogin{
-        background: linear-gradient(65deg, #08227c, #076971, #00520d, #0a2f91);
-        background-size: 400% 400%;
-        /*animation: gradient 85s ease infinite;*/
-        justify-content: center;
-}
-
-#bodyPortfolioWalleybanque, #bodyPortfolioRmit{
-    padding: 0px;
-    margin: 0px;
-    background-color: #1d1d1d;
-    font-family: helvetica-neue, sans-serif;
-    background: linear-gradient(85deg, #1d1d1d, #454545);
-    background-size: 400% 400%;
-    justify-content: center;
-}
-
-
-/* <----------------------------------------> 
-/* <-----  GLOBAL STYLES --------------------> 
-/* <--------------------------------------> */
-
-
-
-/* ---- GLOBAL STYLES  (DESKTOP) MIN 800PX -------- */
-
-@media screen and (min-width: 800px) {
-
-
-nav{
-    display: flex;
-    align-content: center;
-    color: #ffff;
-    flex-direction: row;
-    background-color: none;
-    padding: 8px;
-    justify-content: center;
-}
-
-.logolink{
-    padding-left: 30px;
-    padding-top: 4px;
-    font-weight: 600;
-    font-family: sans-serif;
-    flex-grow:4; 
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.navbarlinks{
-    display: flex;
-    flex-direction: row;
-    margin-left: 40px;  
-    padding-right:20px;
-    text-align: center;
-    align-content: center;
-    margin-top: 5px;
-}
-
-.navlink{
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none; 
-    margin-right: 15px;
-    margin-left: 15px;
-    align-content: center;
-    justify-content: center;
-}
-
-.navlink:hover{
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, 0.49);
-    border-bottom-width: 3px;
-}
-
-.navContactLink{
-    font-size: 14px;
-    font-weight: 600;   
-    border-color: #ffff;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-decoration: none;
-    color: white;
-    padding-left: 13px;
-    padding-right: 13px;
-    background-color: rgba(255, 255, 255, 0.24);
-    margin-top: 4px;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-.navContactLink:hover{
-    background-color: rgba(255, 255, 255, 0.32);
-}
-
 .burger{
-    display: none;
-}
-
-.herobanner{
-    height: 140px;
-    width: 100vw;
-    text-align: left;
-}
-    
-.heroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 82px;
-    margin-top: 160px;
-    text-align: center;
-}
-
-.heroTextLanding{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 82px;
-    margin-top: 160px;
-    text-align: left;
-    margin-left: 120px;
-}
-
-.section2{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.section2Landing{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: left;
-    padding-left: 170px;
-}
-
-#heroimgbox{
-    background-color: black;
-    border-radius: 15px;
-    height: 60vh;
-    width: 60vw;
-    max-width: 1200px;
-    margin-top: 80px;
-    overflow: hidden;
-    background-image: url(radam23home.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-}
-
-.section1{
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section1ImgBox{
-    height: 450px;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-.section2box{
-    height: auto;
-    width: 80%;
-    max-width: 1000px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-}
-
-#footerblock{
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: auto;
-    flex-shrink:auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 190px;
-}
-
-.footerBlock{
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: auto;
-    flex-shrink:auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
-}
-
-#aboutTextTitle {
-    font-weight: 500;
-    font-size: 22px;
-    color: #272727;
-}
-
-#aboutText{
-    font-weight: 400;
-    font-size: 18px;
-    color: #343434;
-    margin-top: -2px;
-}
-
-#contactMeButton{
-    font-size: 1rem;
-    text-align: center;
-    justify-content: left;
-    width: 20%;
-    font-weight: 600;   
-    border-color: black;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 0px;
-    padding: 2px;
-    color: #ffffff;
-    background-color: rgba(57, 77, 113, 0.63);
-    text-decoration: none;
-}
-
-.footertext{
-    font-size: 12px;
-    color: white;
-    opacity: 50%;
-    text-decoration: none;
-}
-
-
-.portfolioComingSoonLink, .portfolioImageLink{
-    width: 200px;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-
-.portfolioComingSoonLink{
-    opacity:40%;
-    margin-bottom: 20px;
-} 
-
-.portfolioLinkContainer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: space-around;;
-}
-
-.section2boxContact{
-    height: auto;
-    width: 80%;
-    max-width: 1000px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-}
-
-#connectWithMeWrapper{
-    height: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-#emailMeWrapper{
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    margin-top: -20px;
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-#contactTextTitle{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
-    color: #272727;
-    padding-bottom: 20px;
-}
-
-#contactTextTitleEmail{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
     display: block;
-    color: #272727;
 }
 
-#contactTextForm, #contactTextFormMessage{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 70px;
-    min-width: 200px;
-    border-radius: 5px;
-    border: none;
-    background-color: #dddddd; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding-left: 30px;
-}
-
-#contactTextFormMessage{
-    box-sizing: border-box;
-    padding: 30px;
-}
-
-
-
-
-
-
-}
-
-
-
-
-
-
-/* ---- GLOBAL STYLES (MOBILE)  MAX 800PX -------- */
-
-@media screen and (max-width: 800px) {
-
-
-nav{
-    display: flex;
-    align-content: center;
-    color: #ffff;
-    flex-direction: row;
-    background-color: none;
-    padding: 8px;
-    justify-content: center;
-}
-
-.logolink{
-    padding-left: 15px;
-    font-weight: 600;
-    font-family: sans-serif;
-    flex-grow:4; 
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-.navbarlinks{
-    display: none;
-}
- 
-/*position:absolute;
-    display: flex;
-    flex-direction: column;
-    top: 0vh;
-    right: 0px; 
-    padding-top: 50px; 
-    align-items: center;
-    width: 30%;
-    height: 100vh;
-    background-color: rgb(13, 31, 65);
-    transform: translateX(100%);
-}*/
-
-.navlink, .navContactLink{
-    padding: 40px;
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none; 
-}
-
-.burger{
-    z-index: 2;
-    margin-top: 12px;
-    padding-right: 15px;
-}
-
-.navactive{
-    transform: translateX(0%);
-    opacity: 0;
-}
-
-@keyframes navlinkfade{
-    from{
-        opacity:0;
-        transform:translateX(50px)
-    }
-    to{
-        opacity:1;
-        transform:translateX(0px)
-    }
-
-}
-
-
-.line1, .line2, .line3{
+.burger div{
+    height:3px;
     width: 25px;
-    height: 3px;
-    margin: 7px;
+    margin: 6px;
     background-color: white;
+
 }
 
-.herobanner{
-    height: 10vw;
-    width: 100vw;
-    justify-content: left;
-    align-content: center;
+.nav-logo a{
+    font-size: 1.1rem;
 }
 
-.heroText{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
+
+.landing-content-box-heading{
     font-size: 2.4rem;
-    margin-top: 85px;
-    margin-left: 7%;
-    margin-bottom: 10px;
 }
 
-.heroTextLanding{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 2.4rem;
-    margin-top: 85px;
-    margin-left: 7%;
-    text-align: left;
-    margin-bottom:10px;
+.landingPage-content-box{
+    height:300px;
+    width:400px;
 }
 
-.section1{
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section1ImgBox{
-    margin-top: 40px;
-    height: 450px;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-.section2{
-    min-height: auto; 
+.aboutPage-content-box{
+    padding:50px;
     height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
+}
+
+.aboutPage-contact-button{
+    width:100%;
+    padding: 18px;
+}
+
+.portfolioPage-content-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
     align-content: center;
-    justify-content: center;
 }
 
-.section2Landing{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+#walley, #rmit, #hsbc{
+    width: 50vw;
+    max-width: 300px;
 }
 
-#heroimgbox{
-    height: 65vh;
-    width: 75%;
-    background-color: black;
-    border-radius: 10px;
-    margin-top: 70px;
-    margin-left: 0px;
-    overflow: hidden;
-    background-image: url(radam23home.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-}
-
-.section2box{
-    height: auto;
-    width: 85%;
-    margin-top: 70px; 
-    padding: 10%;
-    box-sizing: border-box;
+.contactPage-content-box{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
+    align-items: center;
+    margin-bottom:80px;
+}
+
+.contactPage-social-wrapper{
+    display: flex;
+    flex-direction: column;
     align-items: left;
 }
 
-.footerBlock{
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: auto;
-    flex-shrink:auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
+.contact-logo-wrapper:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 9px;
 }
 
-
-#aboutTextTitle {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #272727;
-}
-
-#aboutText{
-    font-weight: 400;
-    font-size: 1rem;
-    color: #343434;
-    margin-top: -2px;
-}
-
-#contactMeButton{
-    font-size: 1rem;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    font-weight: 600;   
-    border-color: black;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 0px;
-    padding: 2px;
-    color: #ffffff;
-    background-color: rgba(57, 77, 113, 0.63);
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footertext{
-    font-size: 12px;
-    color: white;
-    opacity: 50%;
-    text-decoration: none;
-}
-
-
-.portfolioImageLink, .portfolioComingSoonLink{
-    width: 40vw;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
- 
-.portfolioComingSoonLink{
-    opacity:40%;
-    margin-bottom: 20px;
-} 
-
-.portfolioLinkContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
-
-
-
-.section2boxContact{
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-}
-
-
-#connectWithMeWrapper{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-
-#emailMeWrapper{
-    height: auto;
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    margin-top: -20px;
-    background-color: white;
-    box-sizing: border-box;
-}
-
-#contactTextTitle{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
-    color: #272727;
-    padding-bottom: 20px;
-}
-
-#contactText{
-    font-weight: 400;
-    font-size: 18px;
-    color: #2f2f2f;
-    width: auto;
-    margin-top: 12px;
-} 
-
-#section2ContactBox {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    height: auto;
-    width: 80%;
-    min-width: 300px;
-    max-width: 500px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: 70px; 
-    font-family: 'Source Code Pro';
-    font-size: 20px;
-    color: #191919;
-    padding: 50px;
-    background-color: white;
-} 
-
-#contactTextTitleEmail{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
-    display: block;
-    color: #272727;
-}
-
-#ContactSendButton{
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 80px;
-    min-width: 220px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background-color: #195a89;
-    margin-top: 15px;
-}
-
-#contactTextForm, #contactTextFormMessage{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 70px;
-    min-width: 200px;
-    border-radius: 5px;
-    border: none;
-    background-color: #dddddd; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding-left: 30px;
-}
-
-#contactTextFormMessage{
-    box-sizing: border-box;
-    padding: 30px;
-}
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-/* <----------------------------------------> */
-/* <----------------------------------------> */
-/* <----------------------------------------> */
-/* <----------------------------------------> */
-/* <----------------------------------------> */
-/* ---- STYLES TO BE ADDED TO GLOBAL -------- */
-
-#returnBackLink{
-    margin-left: 12px;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-size: 16px;
-    padding-top: 21px;
-    align-content: flex-start;
-}
-
-#returnLinkStyle{
-    text-decoration: none;
-    color: white;
-}
-
-#spacerLink{
-    padding-top: 4px;
-    flex-grow:4; 
-    color: white;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-#logolink2{
-    padding-left: 4px;
-    padding-top: 4px;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: sans-serif;
-    flex-grow:4; 
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-/* <-----  PORTFOLIO PAGE -------------------> */
-
-/* <----------------------------------------> */
-
-
-
-/* <-----  PORTFOLIO (DESKTOP) MIN-WIDTH 800PX -------------> */
-
-@media screen and (min-width: 800px) {
-
-
-#section2portfolio{
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-#section2portfoliobox{
-    margin-top: 70px;    
-    height: 340px;
-    width: 80%;
-    min-width: 800px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-}
-
-#portfolioboxrow1{
-
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-    
-}
-
-
-/* <-----  PORTFOLIO (MOBILE) MAX-WIDTH 800PX --------------> */
-
-
-@media screen and (max-width: 800px) {
-
-
-
-#section2portfolio{
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-#section2portfoliobox{
-    margin-top: 70px;    
-    height: auto;
-    width: 80%;
-    min-width: 300px;
-    max-width: 400px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-}
-
-
-}
-
-
-
-
-
-
-/* <---------LOGIN PAGE----------------> */
-/* <----------------------------------------> */
-
-
-
-/*
-#section1login{
-    display: flex;
-    height:auto;
-    width:100vw;
-    justify-content: center;
-    align-content: center;
-    margin-top: 300px;
-    
-}
-
-
-#section1loginbox{
-    height: 300px;
-    width: 280px;
-    overflow: hidden;
-    opacity: 100%;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 20px 20px rgba(60, 60, 60, 0.26);
-    margin-top: -120px;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 60px;
-    }
-
-
-#usernametext{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 60px;
-    width: 270px;
-    border-radius: 5px;
-    border: none;
-    background-color: #d1d1d1; 
-    margin-bottom: 10px;
-    padding-left: 30px;
-
-}
-
-#passwordtext{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 60px;
-    width: 270px;
-    border-radius: 5px;
-    border: none;
-    background-color: #d1d1d1;
-    margin-bottom: 10px;
-    padding-left: 30px;
-    margin-bottom: 50px;
-}
-
-#loginbutton{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 60px;
-    width: 300px;
-    border-radius: 5px;
-    border: none;
-    color:#ffffff;
-    background-color: #00618d;  
-    
-}
-
-#loginbutton:hover{
-    background: #006d9f;
-    
-}
-*/
-
-#aboutcontactlink{
-    font-size: 14px;
-    width: 70px;
-    align-content: center;
-    font-weight: 600;   
-    border-color: black;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-decoration: none;
-    color: #ffffff;
-    padding-left: 13px;
-    padding-right: 13px;
-    background-color: rgba(57, 77, 113, 0.63);
-    margin-top: -7px;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-#aboutcontactlink:hover{
-    background-color: rgba(18, 41, 82, 0.63);
-}
-
-#howtofindbox{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    vertical-align: middle;
-}
-
-
-/* <----- HERO (ALL CASE STUDIES)------> */
-
-.heroBannerPortfolio{
-    min-height: auto; 
-    height:420px;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;    
-}
-
-
-
-/* <-----  CASE STUDY SECTION 1 ------> */
-
-
-
-.Section1ContainerWalleybanque{
-    display: flex;
-    width:100%;
-    height:auto;
-    background-image: url("blake-wisz-Xn5FbEM9564-unsplash.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: 70% 25%;
-}
-
-.Section1ContainerRmit{
-    display: flex;
-    width:100%;
-    height:auto;
-    background-image: url("mitchell-luo-1V8pi2f2Ew4-unsplash.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-}
-
-/* <-----  CASE STUDY SECTION 2 ------> */
-
-.Section2{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section2Box{
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section2Container{
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.Section2TextContainer{
-    min-width: 350px;
-    height: auto;
-    max-width: 350px;
-    flex-direction: column;
-    padding: 40px;
-    box-sizing: border-box;
-}
-
-.Section2ImgContainerWalleybanque{
-    width: 50%;
-    height: auto;
-    flex: 1;
-    background-image: url("walleylogo.svg");
-    background-color: white;
-    background-size: 320px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.Section2ImgContainerRmit{
-    width: 50%;
-    height: auto;
-    flex: 1;
-    background-image: url("rmitlogo.svg");
-    background-color: white;
-    background-size: 320px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* <-----  TEXTBOX HEADINGS/CONTENT ------> */
-
-.textBoxPreHeading{
-    font-size: 12.5px;
-    font-weight: 400;
-    color: #5c5c5c;
-}
-
-.textBoxPreHeading2{
-    font-size: 13px;
-    font-weight: 400;
-    color: #5c5c5c;
-    margin-top: 80px;
-}
-
-.textBoxHeading{
-    margin-top:10px;
-    margin-bottom:20px;
-    font-size: 30px;
-    color:black;
+.contact-logo-image{
+    width:40px;
+    margin-right: 35px;
 }
 
-.textBoxContent{
-    font-size: 15px;
-    color:black;
-    font-weight: 400;
-    line-height: 2;
-    letter-spacing: .8px;    
-}
-
-.textBoxContentList{
-    font-size: 15px;
-    color:black;
-    font-weight: 400;
-    line-height: 2.0;
-    letter-spacing: .8px;
-    padding-left:10px;
-}
-
-li{
-    margin-bottom: 10px;
-}
-
-.TextContainerContentBox0{
-    height:auto;
-    min-height:50px;
-    width:20%;
-    min-width:180px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 35px;
-    padding-bottom: 40px;
-}
-
-.TextContainerContentBox0RmitSection7{
-    height:auto;
-    min-height:50px;
-    min-width:180px;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 35px;
-    padding-bottom: 40px;
-}
-
-.TextContainerContentBox1{
-    height:auto;
-    min-height:50px;
-    width:40%;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.TextContainerContentBox2{
-    height:auto;
-    min-height:50px;
-    width:40%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-/* <-----  CASE STUDY SECTION 3 ------> */
-
-.Section3{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section3Box{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section3TextContainer{
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    align-content: center;
-    background-color: #ffffff;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.Section3ImgContainerWalleybanque{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("ergita-sela-zdLRWI_pK_0-unsplash.jpg");
-    background-size: cover;
-    filter: contrast(110%) saturate(110%) brightness(90%);
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-.Section3ImgContainerRmit{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("charles-forerunner-3fPXt37X6UQ-unsplash.jpg");
-    background-size: cover;
-    filter: contrast(110%) saturate(110%) brightness(90%);
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-
-/* <-----  CASE STUDY SECTION 4 ------> */
-
-.Section4{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section4Box{
-    height: 700px;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section4Container{
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.Section4TextContainer{
-    min-width: 350px;
-    height: auto;
-    max-width: 350px;
-    flex-direction: column;
-    padding: 40px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-}
-
-.Section4TextContainerRmit{
-    min-width: 350px;
-    height: auto;
-    max-width: 350px;
-    flex-direction: column;
-    padding: 40px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-}
-
-.Section4ImgContainerWalleybanque{
-    width: 50%;
-    height: auto;
-    flex: 1;
-    background-image: url("EDITED%20victor-xok-BHNVH_Ov9P8-unsplash%202.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.Section4ImgContainerRmit{
-    width: 50%;
-    height: auto;
-    flex: 1;
-    background-image: url("annie-spratt-sggw4-qDD54-unsplash.jpg");
-    background-size: cover;
-    background-position: 25% 50%;
-    background-repeat: no-repeat;
-}
-
-/* <-----  CASE STUDY SECTION 5 ------> */
-
-.Section5{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section5Box{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section5TextContainer{
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    align-content: center;
-    background-color: #ffffff;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.Section5ImgContainerWalleybanque{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("moodboardlrg.png");
-    background-size: 800px;
-    background-color: #484848;
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-.Section5ImgContainerRmit{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("christopher-burns-Kj2SaNHG-hg-unsplash.jpg");
-    background-size: cover;
-    background-color: #484848;
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-/* <-----  CASE STUDY SECTION 6 ------> */
-
-.Section6{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section6Box{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section6TextContainer{
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    align-content: center;
-    background-color: #ffffff;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.Section6ImgContainerWalleybanque{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("Userflow.png");
-    background-size: 130%;
-    background-color: #b4b4b4;
-    background-position: 0% 0%;
-    background-repeat: no-repeat; 
-}
-
-.Section6ImgContainerRmit{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("annie-spratt-CH-ZZW8cbac-unsplash.jpg");
-    background-size: 100%;
-    background-color: #b4b4b4;
-    background-position: 50% 20%;
-    background-repeat: no-repeat; 
-}
-
-/* <-----  CASE STUDY SECTION 7 ------> */
-
-.Section7{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section7Box{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section7TextContainer{
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    align-content: center;
-    background-color: #ffffff;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.Section7ImgContainer{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("frank-holleman-wldvdRBwGuU-unsplash.jpg");
-    filter: contrast(106%);
-    background-size: cover;
-    background-color: #484848;
-    background-position: 50% 40%;
-    background-repeat: no-repeat; 
-}
-
-.Section7ImgContainerRmit{
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-grow: 1;
-    background-image: url("joshua-ness-9iqqFZ7OuwY-unsplash.jpg");
-    background-size: cover;
-    background-color: #484848;
-    background-position: 50% 10%;
-    background-repeat: no-repeat; 
-}
-
-/* <-----  CASE STUDY SECTION 8 ------> */
-
-.Section8{
-    min-height: auto; 
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.Section8Box{
-    height: auto;
-    width: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
-}
-
-.Section8Container{
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.Section8TextContainer{
-    min-width: 350px;
-    height: auto;
-    max-width: 350px;
-    flex-direction: column;
-    padding: 40px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-}
-
-.Section8ImgContainerWalleybanque{
-    width: 50%;
-    height: auto;
-    flex: 1;
-    background-image: url("Walleybanque%20App.png");
-    background-color: #000000;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.Section8ImgContainerRmit{
-    width: 50%;
-    height: auto;
-    flex: 1;
-    background-image: url("final%20prototype%20edit%20for%20upload.png");
-    background-color: #000000;
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-
-
-/* <----------------------------------------> */
-
-/* <-----  CONTACT PAGE --------------------> */
-
-/* <----------------------------------------> */
-
-
-
-
-/* <-----  CONTACT (DESKTOP) MIN-WIDTH 800PX -----------------> */
-
-@media screen and (min-width: 800px) {
-    
-
-
-#section2Content {
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
-    
-
-
-    
-
-    
-
-
-#contactContainerEmail{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-
-#contactTextForm{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 70px;
-    width: auto;
-    max-width: auto;
-    border-radius: 5px;
-    border: none;
-    background-color: #dddddd; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding-left: 30px;
-}
-
-#contactTextFormMessage{
-    box-sizing: border-box;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    width: auto;
-    border-radius: 5px;
-    border: none;
-    background-color: #dddddd; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 30px;
-}
-
-#ContactSendButton{
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: sans-serif;
-    height: 80px;
-    width: 360px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background-color: #195a89;
-    margin-top: 15px;
-}
 
-.connectLinkContainer{
-    height: 50px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-#contactImgEmoji{
-    max-height: 50px;
-    max-width: 50px;
-    min-width: 50px;
-    font-size: 36px;
-    padding-right: 8px;  
-    padding-left: 8px;  
-    width: 10%;
-}
-#contactImgEmoji2{
-    height: 45px;
-    min-width: 45px;
-    max-width: 45px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 8px;
-    margin-right: 8px; 
-}
-
-#contactImgEmoji2facebook{
-    height: 35px;
-    min-width: 35px;
-    max-width: 35px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 8px;
-    margin-right: 12px; 
-    margin-top: 4px;
-}
-
-#contactText{
-    font-weight: 400;
-    font-size: 18px;
-    color: #2f2f2f;
-    width: auto;
-    margin-top: 12px;
-}
-
-}
-
-
-
-/* <-----  CONTACT (MOBILE) MAX-WIDTH 800PX -----------------> */
-
-@media screen and (max-width: 800px) {
-
-    
-    
-#section2Content {
-    min-height: auto; 
-    height:auto;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
-    
-
-    
-#emailMeWrapper{
-    height: auto;
-    display: block;
-    flex-direction: column;
-    margin-top: 20px;
-    align-items: center;
-    background-color: white;
-}
-
-#connectWithMeWrapper{
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-    
-.connectLinkContainer{
-    height: 50px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-#contactTextTitle{
-    font-weight: 500;
-    font-size: 22px;
-    min-width: 240px;
-    color: #272727;
-    padding-bottom: 20px;
-}
-    
-    
-#contactContainerEmail{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-
-
-
 
-#contactImgEmoji{
-    max-height: 50px;
-    max-width: 50px;
-    min-width: 50px;
-    font-size: 36px;
-    padding-right: 8px;  
-    padding-left: 8px;  
-    width: 10%;
-}
-#contactImgEmoji2{
-    height: 45px;
-    min-width: 45px;
-    max-width: 45px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 8px;
-    margin-right: 8px; 
-}
-
-#contactImgEmoji2facebook{
-    height: 35px;
-    min-width: 35px;
-    max-width: 35px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 8px;
-    margin-right: 12px; 
-    margin-top: 4px;
-}
-
 
-    
-    
 }
-
-
-
-/* <----------------------------------------> */
-/* <----------------------------------------> */
-
-
 
 
