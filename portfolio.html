@@ -1,111 +1,59 @@
 <!DOCTYPE html>
-<Html>
-    
+
 <head>
-
-<title>Welcome to rAdam23</title> 
-
-        <!-- VIEWPORT --> 
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to rAdam23</title>
+    <!-- FAVICON -->    
+    <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
             
-        <!-- STYLESHEET --> 
-            
-                <link rel="stylesheet" href="main.css">
+    <!-- APPLE ICONS --------------->    
 
-        <!-- FAVICON -->    
-                <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
-            
-        <!-- APPLE ICONS --------------->    
+            <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+            <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+            <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+            <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
+    
+    <!-- VIEWPORT --------------->    
 
-                <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
-                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
-                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
-                <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
-            
-        <!-- GRADIENT --------------->    
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-                </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- STYLESHEET --------------->    
 
-        <!-- GOOGLE FONTS --------------->    
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-                </style>
+    <link rel="stylesheet" href="main.css">
 
-                <link rel="preconnect" href="https://fonts.gstatic.com"> 
-                <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-
-        <!-- GOOGLE RECAPTCHA --------------->    
-                <script src="https://www.google.com/recaptcha/api.js"></script>
-
-                <script> 
-                    function onSubmit(token) {document.getElementById("demo-form").submit();}
-                </script>
-            
 </head>
 
-<!-- END OF HEAD --------------------------------------->    
-<!-- END OF HEAD --------------------------------------->    
-    
-   
-<body id="bodyportfolio"> 
+<body class="body-portfolio">
+<nav>
 
-    <div id="gradient"/>
-
-    <nav>
-        <a href="index.html" class="logolink">rAdam23</a>
-        
-            <div class="navbarlinks">
-                
-                    <a href="about.html" class="navlink">about</a>
-                     
-                    <a href="portfolio.html" class="navlink">portfolio</a>
-                    <!--
-                    <a href="code.html" id="codelink">code</a>
-                    -->
-                    <a href="https://github.com/rAdam23" target="_blank" class="navlink">github</a>
-                    
-                    <a href="contact.html" class="navContactLink">contact</a>
-                    <!--
-                    <a href="login.html" class="navlink">login</a>
-                    -->
-            </div>
-            
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
-            <script src="app.js"></script>
-    </nav>
-    
-    
-<section class="herobanner">
-        <p class= "heroText">/ Portfolio</p>   
-</section>
-
-    
-<section class="section2">
-    <div class= "section2box">
-        <div class="portfolioLinkContainer">
-            
-            <a href="rmit.html"><img class="portfolioImageLink" src="rmitlogo.svg"></a>
-            
-            <a href="walleybanque.html"> <img class="portfolioImageLink" src="walleylogo.svg"></a>
-            
-            <a href="#"><img class="portfolioComingSoonLink" src="HSBCLogoComingSoon.svg"></a>
-        </div>
+    <div class="nav-logo">
+        <a href="index.html">rAdam23</a>
     </div>
+    <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+<section class="content-section">
+
+    <div class="landingPage-content-box-heading">/ Portfolio</div>
+    <div class="portfolioPage-content-box">    
+        <image id=walley src="walleybanque-logo.svg"></image>
+        <image id=rmit src="rmit-logo.svg"></image>
+        <image id=hsbc src="hsbc-logo.svg"></image>
+    </div>
+
+
 </section>
-    
-    
-<section class="footerBlock">    
-    <p class="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
-        
-</section>    
-        
-      
+
 </body>
+
 
 </html>

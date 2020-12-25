@@ -1,148 +1,68 @@
 <!DOCTYPE html>
-<Html>
-    
+
 <head>
-
-<title>Welcome to rAdam23</title> 
-
-        <!-- VIEWPORT --> 
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to rAdam23</title>
+    <!-- FAVICON -->    
+    <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
             
-        <!-- STYLESHEET --> 
-            
-                <link rel="stylesheet" href="main.css">
+    <!-- APPLE ICONS --------------->    
 
-        <!-- FAVICON -->    
-                <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
-            
-        <!-- APPLE ICONS --------------->    
+            <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+            <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+            <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+            <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
+    
+    <!-- VIEWPORT --------------->    
 
-                <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
-                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
-                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
-                <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
-            
-        <!-- GRADIENT --------------->    
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-                </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- STYLESHEET --------------->    
 
-        <!-- GOOGLE FONTS --------------->    
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-                </style>
+    <link rel="stylesheet" href="main.css">
 
-                <link rel="preconnect" href="https://fonts.gstatic.com"> 
-                <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-
-        <!-- GOOGLE RECAPTCHA --------------->    
-                <script src="https://www.google.com/recaptcha/api.js"></script>
-
-                <script> 
-                    function onSubmit(token) {document.getElementById("demo-form").submit();}
-                </script>
-            
 </head>
 
-<!-- END OF HEAD --------------------------------------->    
-<!-- END OF HEAD --------------------------------------->    
-    
-   
-<body id="bodycontact"> 
+<body class="body-contact">
+<nav>
 
-    <div id="gradient"/>
-
-    <nav>
-        <a href="index.html" class="logolink">rAdam23</a>
-        
-            <div class="navbarlinks">
-                
-                    <a href="about.html" class="navlink">about</a>
-                        
-                    <a href="portfolio.html" class="navlink">portfolio</a>
-                    <!--
-                    <a href="code.html" id="codelink">code</a>
-                    -->
-                    <a href="https://github.com/rAdam23" target="_blank" class="navlink">github</a>
-                    
-                    <a href="contact.html" class="navContactLink">contact</a>
-                    <!--
-                    <a href="login.html" class="navlink">login</a>
-                    -->
-            </div>
-            
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
-            <script src="app.js"></script>
-    </nav>
-    
-
-<section class="herobanner">
-        <p class= "heroText">/ Contact me</p>   
-</section>
-
-<section class="section2">
-    
-    <div class= "section2boxContact">
-
-        <div id= "connectWithMeWrapper">
-
-            <div id="contactTextTitle"> Connect with me:</div>
-
-                <div class="connectLinkContainer">
-                    <div id="contactImgEmoji">&#x1F4E7</div> 
-                    <div id="contactText">hiradam23@gmail.com</div>
-                </div>
-
-                <div class="connectLinkContainer">
-                    <div id="contactImgEmoji">&#x1F426</div> 
-                    <div id="contactText">@rAdam23Official</div>
-                </div>
-
-                <div class="connectLinkContainer">
-                    <img id="contactImgEmoji2" src="discordlogo.svg"></img> 
-                    <div id="contactText">#3228</div>
-                </div>
-
-                <div class="connectLinkContainer">
-                    <div id="contactImgEmoji">&#128077</div> 
-                    <div id="contactText">rAdam23</div>
-            </div>
-        </div>
-
-
-        <div id= "emailMeWrapper">
-
-            <div id="contactContainerEmail">
-                <p id="contactTextTitleEmail">Email me:</p>
-
-                <input type="form" id="contactTextForm" placeholder="Your Name"> 
-
-                <input type="email" id="contactTextForm" placeholder="Email" required>
-
-                <input type="form" id="contactTextForm" placeholder="Subject" required>  
-
-                <textarea id="contactTextFormMessage"placeholder="Message.."></textarea>          
-
-                <input type="button" id="ContactSendButton" value="send">
-            </div>    
-        </div>
+    <div class="nav-logo">
+        <a href="index.html">rAdam23</a>
     </div>
+    <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
 
-    
+<section class="content-section">
+
+    <div class="contactPage-content-box-heading">/ Contact</div>
+        
+        <div class="contactPage-content-box">    
+        
+                <div class="contact-logo-wrapper" ><image class= "contact-logo-image" src="facebook-logo.svg"></image>rAdam23</div>
+                
+                <div class="contact-logo-wrapper" ><image class= "contact-logo-image" src="twitter-logo.svg"></image>radam23Official</div>
+
+                <div class="contact-logo-wrapper" ><image class= "contact-logo-image" src="discord-logo.svg"></image>#3228</div>
+            
+                <div class="contact-logo-wrapper" ><image class= "contact-logo-image" src="gmail-logo.svg"></image>hiradam23@gmail.com</div>
+
+        </div>
+
+        </div>
+
+
 </section>
-    
-    
-<section class="footerBlock">    
-<p class="footertext">Copyright 2020 rAdam23. All rights reserved</p>   
-    
-</section>    
-    
-    
+
 </body>
-    
-    </html>
+
+
+</html>
