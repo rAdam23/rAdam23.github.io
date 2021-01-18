@@ -1121,7 +1121,7 @@ h3{
                 justify-content: center;
                 list-style: none;
                 color: rgb(125, 155, 201);
-                    font-size: 1.3rem;
+                    font-size: 1.6rem;
                 font-weight: 300;
                 line-height: 1.7;
                 width: 75vw;
@@ -1197,10 +1197,11 @@ h3{
                 margin-top: 35px;
                     font-size: 1.4rem;
                 font-weight: 500;
+                font-size: 1.7rem;
                 line-height: 1.8;
                 letter-spacing: -0.5px;
                 color: rgb(100, 103, 126);
-                width: 250px;
+                width: 270px;
             }
 
 
