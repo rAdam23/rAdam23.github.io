@@ -398,7 +398,6 @@ h4{
     justify-content: center;
     align-items: left;
     font-size: 1.2rem;
-    color: ;
     filter: drop-shadow(5px 5px 10px rgb(153, 153, 153));
 }
 
@@ -630,7 +629,7 @@ h3{
                     border-radius: 10px;
                     filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
                 }
-            }
+            
 
                 /*<===============      ABOUT - SECTION - MOBILE     ===============================>*/
                 /*<===============      ABOUT - SECTION - MOBILE     ===============================>*/
@@ -1011,7 +1010,7 @@ h3{
                     margin-right: 0px;
                 }
 
-                }
+            }
 
 
   /*<=================       1024PX      ==========================>*/
