@@ -17,13 +17,13 @@ body{
 /*<===================      LANDING SECTION      =======================================>*/
 
 .section-landing-background{
-    background: radial-gradient( rgba(7, 63, 95, 0.952)10%, rgb(2, 6, 22)32%);
-    background-size: 190% 260%;
-    background-position: 7% 10%;
+    background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
+    background-size: 380% 360%;
+    background-position: 27% 30%;
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     padding-top: 20px;
 }
 .section-container-landing{
@@ -96,7 +96,7 @@ nav a{
 /*<===================      LANDING - CONTENT     ============================>*/
 
 .landing-content-wrapper{
-    margin-top: 180px;
+    margin-top: 230px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -129,16 +129,16 @@ nav a{
     width: 100%;
 }
 
-.landing-section-image{
+.landing-section-image {
     position: relative;
-    margin-top: 70px;
+    display: flex;
+    margin-top: 90px;
     width: 80vw;
+    height: 300px;
     max-width: 800px;
-    height: 400px;
-    max-height: 500px;
     background-image: url(images/radamcode.png);
-    background-size: 110%;
-    border-radius: 10px;
+    background-size: cover;
+    border-radius: 5px;
     filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
 }
 
@@ -161,7 +161,7 @@ nav a{
     width: 90vw;
     max-width: 1440px;
     justify-content: space-between;
-    margin-top: 320px;
+    margin-top: 180px;
     margin-bottom: 280px;
 }
 
@@ -170,6 +170,12 @@ nav a{
     min-width: 300px;
     max-width: 470px;
 }
+
+.about-image-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 
 h1 {
     background: linear-gradient(to right, #6d0bc9 0%, #0097bd 50%);
@@ -198,10 +204,33 @@ h4{
 
 
 .about-image-box-desktop{
-    display: flex;
-    justify-content: flex-end;    
+    justify-content: center;    
     width: auto;
 }
+
+.tiles-desktop {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;;
+}
+
+.pancake-icon{
+    position: absolute;
+    display: flex;
+    width: auto;
+    margin-top: 500px;
+    margin-right: 400px;
+    font-size: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-tiles-desktop {
+    display: flex;
+    width: 380px;
+}
+
+/*<===================    MOBILE   =====================>*/
 
 .about-image-box-mobile{
     display: none;
@@ -211,28 +240,8 @@ h4{
     display: none;
 }
 
-.tiles-desktop {
-    display: flex;
-    justify-content: center;
-    margin-right: -20px;
-}
-
-.pancake-icon{
-    position: absolute;
-    display: flex;
-    width: auto;
-    margin-top: 550px;
-    margin-right: 43vw;
-    font-size: 10rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-tiles-desktop {
-    width: 480px;
-}
-
 .about-tiles-mobile {
+    display: none;
     width: 80vw;
     display: none;
 }
@@ -321,7 +330,6 @@ h4{
     display: flex;
     justify-content: center;
 }
-
 
 .applications-grid{
     display: grid;
@@ -531,6 +539,25 @@ h3{
                 /*<===============      LANDING - SECTION - MOBILE     ===============================>*/
                 /*<===============      LANDING - SECTION - MOBILE     ===============================>*/
                 
+                .section-landing-background{
+                    background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
+                    background-size: 380% 360%;
+                    background-position: 27% 30%;
+                    display: flex;
+                    justify-content: center;
+                    width: 100vw;
+                    height: 120vh;
+                    padding-top: 20px;
+                }
+                .section-container-landing{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    height: 800px;
+                    width: 90vw;
+                    max-width: 1440px;
+                }
+                
                 nav{
                     padding-top: 0px;
                 }
@@ -597,13 +624,13 @@ h3{
                         margin-top: 70px;
                     width: 80vw;
                     max-width: 800px;
-                        height: 310px;
+                        height: 210px;
                     background-image: url(images/radamcode.png);
-                    background-size: 450%;
+                    background-size: 230%;
                     border-radius: 10px;
                     filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
                 }
-                
+            }
 
                 /*<===============      ABOUT - SECTION - MOBILE     ===============================>*/
                 /*<===============      ABOUT - SECTION - MOBILE     ===============================>*/
@@ -689,7 +716,7 @@ h3{
 
                 .pancake-icon-mobile{
                     display: flex;
-                    font-size: 10rem;
+                    font-size: 5rem;
                     margin-top: 130px;
                     margin-left: 20px;
                 }
@@ -1052,7 +1079,7 @@ h3{
             height: 360px;
         background-image: url(images/radamcode.png);
         background-size: cover;
-        border-radius: 10px;
+        border-radius: 5px;
         filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
     }
     
@@ -1125,18 +1152,19 @@ h3{
         display: flex;
         justify-content: center;
         margin-right: -20px;
-            margin-top: 450px;
+            margin-top: 150px;
     }
     
     .pancake-icon{
         position: absolute;
         display: flex;
         width: auto;
-        margin-top: 560px;
+        margin-top: 630px;
         margin-right: 43vw;
         font-size: 10rem;
         justify-content: center;
         align-items: center;
+        margin-right: 100px;
     }
     
     .about-tiles-desktop {
@@ -1458,4 +1486,5 @@ h3{
 
     }
          
+
 
