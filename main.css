@@ -1161,12 +1161,12 @@ h3{
                 position: relative;
                 display: flex;
                 flex-direction: column;
-                height: 130vh;
+                height: auto;
                 width: 90vw;
                 max-width: 1440px;
                 justify-content: center;
                 margin-top: 170px;
-                margin-bottom: 130px;
+                margin-bottom: 80px;
             }
 
             .text-box-container{
@@ -1197,7 +1197,7 @@ h3{
                 margin-top: 35px;
                     font-size: 1.4rem;
                 font-weight: 500;
-                font-size: 1.7rem;
+                font-size: 1.6rem;
                 line-height: 1.8;
                 letter-spacing: -0.5px;
                 color: rgb(100, 103, 126);
@@ -1233,7 +1233,7 @@ h3{
             .pancake-icon-mobile{
                 display: flex;
                 font-size: 9rem;
-                margin-top: 90px;
+                margin-top: 50px;
                 margin-left: 20px;
             }
 
