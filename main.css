@@ -1137,9 +1137,9 @@ h3{
             .landing-section-image{
                 position: relative;
                     margin-top: 70px;
-                width: 80vw;
+                width: 85vw;
                 max-width: 800px;
-                    height: 210px;
+                    height: 510px;
                 background-image: url(images/radamcode.png);
                 background-size: 230%;
                 border-radius: 5px;
@@ -1233,7 +1233,7 @@ h3{
             .pancake-icon-mobile{
                 display: flex;
                 font-size: 9rem;
-                margin-top: 50px;
+                margin-top: 30px;
                 margin-left: 20px;
             }
 
