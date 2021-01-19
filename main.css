@@ -23,14 +23,15 @@ body{
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 120vh;
+    height: auto;
     padding-top: 20px;
 }
 .section-container-landing{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height:950px;
+    margin-bottom: 100px;
     width: 90vw;
     max-width: 1440px;
 }
@@ -127,21 +128,21 @@ nav a{
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: 600px;
 }
 
-.landing-section-image {
+.landing-section-image{
     position: relative;
     display: flex;
-    margin-top: 90px;
+    margin-top: 100px;
     width: 80vw;
-    height: 300px;
+    height: 750px;
     max-width: 800px;
     background-image: url(images/radamcode.png);
     background-size: cover;
     border-radius: 5px;
     filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
 }
-
 
 /*<===================      ABOUT - SECTION      ===================================>*/
 /*<===================      ABOUT - SECTION      ===================================>*/
@@ -227,7 +228,7 @@ h4{
 }
 
 .about-tiles-desktop {
-    display: block;
+    display: flex;
     width: 380px;
 }
 
@@ -287,6 +288,8 @@ h4{
     display: grid;
     justify-content: center;
     margin-top: 19vh;
+    margin-left: 0;
+    margin-right: 0;
     grid-template-columns: 20vw 20vw 20vw;
     column-gap: 50px;
     grid-template-rows: 10rem;
@@ -343,8 +346,8 @@ h4{
 
 .applications-grid-image{
     border-radius: 2px;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -387,8 +390,8 @@ h4{
     flex-direction: column;
     width: 300px;
     height: 450px;
-    margin-top: 170px;
-    margin-left:300px;
+    margin-top: 130px;
+    margin-left:360px;
     background-color: white;
     border: rgb(167, 167, 167);
     border-style: solid;
@@ -532,517 +535,1001 @@ h3{
 
 
 
-                /*<=================       1024PX      ==========================>*/
-
-                @media screen and (max-width: 1024px) {
-
-                            
-                    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
-                    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
-                    
-                    .section-landing-background{
-                        background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
-                        background-size: 380% 360%;
-                        background-position: 27% 30%;
-                        display: flex;
-                        justify-content: center;
-                        width: 100vw;
-                        height: 120vh;
-                        min-height: 800px;
-                        padding-top: 20px;
-                    }
-                    
-                    .section-container-landing{
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        height: 800px;
-                        width: 90vw;
-                        max-width: 1440px;
-                    }
-                    
-
-                    nav{
-                        padding-top: 0px;
-                    }
-
-                    .nav-link{
-                        display: flex;
-                    }
-
-                    .section-landing-background{
-                        background: radial-gradient( rgba(7, 63, 95, 0.952)10%, rgb(2, 6, 22)32%);
-                        background-size: 190% 260%;
-                        background-position: 7% 10%;
-                        display: flex;
-                        justify-content: center;
-                        width: 100vw;
-                            height: 105vh;
-                        padding-top: 20px;
-                    }
-
-                    .section-container-landing{
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        height: 800px;
-                        width: 90vw;
-                        max-width: 1440px;
-                    }
-
-                    .landing-content-wrapper{
-                            margin-top: 250px;
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%;
-                    }
-                    
-                    .landing-heading{
-                            font-size: 3.4rem;
-                        color: rgb(255, 255, 255);
-                        font-weight: 700;
-                        margin-bottom: 15px;
-                    }
-                    
-                    .landing-text p{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: left;
-                        justify-content: center;
-                        list-style: none;
-                        color: rgb(125, 155, 201);
-                            font-size: 1.3rem;
-                        font-weight: 300;
-                        line-height: 1.7;
-                        width: 75vw;
-                    }
-                    
-                    .section-img-container{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        width: 100%;
-                    }
-                    
-                    .landing-section-image{
-                        position: relative;
-                            margin-top: 70px;
-                        width: 80vw;
-                        max-width: 800px;
-                            height: 360px;
-                        background-image: url(images/radamcode.png);
-                        background-size: cover;
-                        border-radius: 5px;
-                        filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
-                    }
-                    
-
-                    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
-                    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
-
-                    .section-light-background{
-                        display: inline-flex;
-                        justify-content: center;
-                        width: 100vw;
-                        height: auto;
-                    }
-
-                    .section-container-about{
-                        position: relative;
-                        display: flex;
-                        flex-direction: row;
-                        height: 90vh;
-                        min-height: 700px;
-                        width: 90vw;
-                        max-width: 1440px;
-                        justify-content: top;
-                        margin-top: 200px;
-                        margin-bottom: 400px;
-                    }
-
-                    .text-box-container{
-                        display: flex;
-                        flex-direction: column;
-                        width:90vw;
-                    }
-
-                    h1 {
-                        background: linear-gradient(to right, #6d0bc9 0%, #0097bd 50%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                            font-size: 2.8rem;
-                        line-height: 1.25;
-                        letter-spacing: -.5px;
-                        width: 90vw;
-                    }
-
-                    h2{
-                        color: rgb(19, 19, 19);
-                            font-size: 2.8rem;
-                        letter-spacing: -.5px;
-                        line-height: 1.1;
-                        width: 470px;
-                    }
-
-                    h4{
-                        margin-top: 35px;
-                            font-size: 1.4rem;
-                        font-weight: 500;
-                        line-height: 1.7;
-                        letter-spacing: -0.5px;
-                        color: rgb(100, 103, 126);
-                        width: 370px;
-                    }
-
-
-                    .about-image-box-desktop{
-                        position: static;
-                        display: flex;
-                        justify-content: flex-end;    
-                        width: auto;
-                    }
-                    
-                    .tiles-desktop {
-                        position: absolute;
-                        display: flex;
-                        justify-content: center;
-                        margin-right: -20px;
-                            margin-top: 150px;
-                    }
-                    
-                    .about-tiles-desktop {
-                        width: 400px;
-                    }
-
-                    .pancake-icon{
-                        position: absolute;
-                        display: flex;
-                        width: auto;
-                        margin-top: 350px;
-                        margin-right: 43vw;
-                        font-size: 10rem;
-                        justify-content: center;
-                        align-items: center;
-                        margin-right: 100px;
-                    }
-
-                    .about-image-box-mobile{
-                        display: none;
-                        justify-content: left;    
-                    }
-
-                    .pancake-icon-mobile{
-                        display: none;
-                        font-size: 10rem;
-                        margin-top: 130px;
-                        margin-left: 20px;
-                    }
-
-                        
-
-
-                    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
-                    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
-
-                    .section-dark-background-portfolio{
-                        background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)15%);
-                        background-size: 420% 125%;
-                        background-position:55% 05%;
-                        display: flex;
-                        justify-content: center;
-                        width: 100vw;
-                        height: auto;
-                    }
-
-                    .section-container-portfolio{
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        width: 90vw;
-                        max-width: 1440px;
-                        justify-content: center;
-                        margin-top: 170px;
-                        margin-bottom: 370px;
-                    }
-
-                    .h2-light-text{
-                        color: white;
-                    }
-
-                    .h4-light-text{
-                        color: rgb(130, 157, 196);
-                        font-weight: 300;
-                    }
-
-                    .portfolio-grid{
-                        display: grid;
-                        justify-content: center;
-                        row-gap: 270px;
-                        grid-template-columns: 230px;
-                        grid-template-rows: 50px 50px 50px;
-                        margin-top: 140px;
-                    }
-
-                    .portfolio-grid-image{
-                        background-color: white;
-                        border-radius: 4px;
-                        width:230px;
-                        height:230px;
-                    }
-
-
-
-
-                    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
-                    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
-
-                    .section-dark-background-applications{
-                            background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)14%);
-                            background-size: 420% 225%;
-                            background-position:31% 15%;
-                        display: inline-flex;
-                        justify-content: center;
-                        width: 100vw;
-                        height: auto;
-                    }
-
-                    .section-container-applications{
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        width: 90vw;
-                        max-width: 1440px;
-                        justify-content: space-between;
-                            margin-top: 120px;
-                            margin-bottom: 120px;
-                    }
-
-                    .grid-container{
-                        display: flex;;
-                        justify-content: center;
-                    }
-
-
-                    .applications-grid{
-                        display: grid;
-                        justify-content: center;
-                        align-items: left;
-                            margin-top: 140px;
-                            grid-template-columns: 65px 65px 65px;
-                            column-gap: 17vw;
-                            grid-template-rows: 20vh 20vh 20vh 20vh;
-                    }
-
-                    .applications-grid-image{
-                        border-radius: 2px;
-                            width: 55px;
-                            height: 55px;
-                    }
-
-
-                    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
-                    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
-
-                    .section-container-contact{
-                        position: relative;
-                        display: flex;
-                            flex-direction: column;
-                        height: auto;
-                        width: 90vw;
-                        max-width: 1440px;
-                        justify-content: space-between;
-                            margin-top: 140px;
-                            margin-bottom: 70vh;
-                    }
-
-                    .contact-wrapper-text{
-                        display: flex;
-                        flex-direction: column;
-                        width:35%;
-                    }
-                    
-                    .contact-wrapper-list{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        width:100%;
-                    }
-
-                    .hola-box{
-                        width:46vw;
-                        min-width: 300px;
-                        max-width: 670px;
-                    }
-
-                    .contact-list{
-                        position: absolute;
-                            display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        width: auto;
-                        height: auto;
-                                margin-top: -100px;
-                            margin-left:220px;
-                            margin-right:0px;
-                        background-color: white;
-                        border: rgb(167, 167, 167);
-                        border-style: solid;
-                        border-width: 1px;
-                        border-radius: 4px;
-                        list-style: none;
-                        padding-left:35px;
-                        padding-right:35px;
-                        padding-top:25px;
-                        padding-bottom:25px;
-                        filter: drop-shadow(5px 5px 10px rgb(153, 153, 153));
-                    }
-
-                    .contact-list a{
-                        display: flex;
-                        width: auto;
-                        flex-direction: row;
-                        text-decoration: none;
-                        font-size: 1.4rem;
-                        color: rgb(100, 103, 126);
-                        line-height: 40px;
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                    }
-
-                    .contact-list img{
-                        width: 38px;
-                        vertical-align: middle;
-                        margin-right: 25px
-                    }
-
-
-                    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
-                    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
-
-                    .section-light-background-footer{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        width: 100vw;
-                        height: auto;
-                        background-color: rgb(238, 238, 238);
-                    }
-
-                    .section-container-footer{
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        width: 90vw;
-                        max-width: 1440px;
-                            padding-top: 70px;
-                        margin-bottom: 20px;
-                        margin-left: 5vw;
-                        margin-right: 5vw;
-                        color: rgb(83, 87, 110);
-                    }
-
-                    .footer-col-logo{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%;
-                        margin-bottom: 30px;
-                    }
-
-                    h3{
-                        color: rgb(19, 19, 19);
-                        font-weight: 700;
-                        font-size: 1.5rem;
-                    }
-
-                    .footer-li-container{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                    }
-
-
-                    .footer-list{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-
-                    .footer-li-container ul{
-                        display: flex;
-                        flex-direction: column;
-                        list-style: none;
-                        padding-left: 0vw;
-                        padding-right: 0vw;
-                        align-items: center;
-                    }
-
-                    .footer-li-container li{
-                        display: flex;
-                        flex-direction: column;
-                        padding-top: 5px;
-                        padding-bottom: 18px;
-                    } 
-
-                    .footer-social-icons{
-                        margin-top: 35px;
-                    }
-
-                    .footer-social-icons li{
-                        display: flex;
-                        flex-direction: row;
-                        margin-right: 10px;
-                        margin-left: 10px;
-                    }
-
-                    .footer-social-icons-image{
-                        height: 28px;
-                        padding: 2px;
-                        vertical-align: middle;
-                    }
-
-                    .footer-social-icons-image-gmail{
-                        margin-top: 0px;
-                        height: 28px;
-                        padding: 3px;
-                        vertical-align: baseline;
-                    }
-
-                    .footer-social-icons-image-discord{
-                        margin-top: 2px;
-                        height: 28px;
-                        padding: 0px;
-                        vertical-align: baseline;
-                    }
-
-                    /*<=================       FOOTER BASE TABLET      ==========================>*/
-
-                    .footer-base{
-                        display: flex;
-                        flex-direction: row;
-                        height: 50px;
-                        background-color: rgb(231, 231, 231);
-                        align-items: center;
-                        justify-content: center;
-                        padding-left: 5vw;
-                        padding-right: 5vw;
-                    }
-
-                    .footer-base-text{
-                        color: rgb(83, 87, 110);
-                        font-size: .8rem;
-                        margin-right: 10px;
-                    }
-
-                    }
-                        
-
+/*<=================       1024PX      ==========================>*/
+
+@media screen and (max-width: 1024px) {
+
+            
+    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
+    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
+    
+    .section-landing-background{
+        background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
+        background-size: 380% 360%;
+        background-position: 27% 30%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        padding-top: 20px;
+    }
+    
+    .section-container-landing{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+    }
+    
+
+    nav{
+        padding-top: 0px;
+    }
+
+    .nav-link{
+        display: flex;
+    }
+
+    .section-landing-background{
+        background: radial-gradient( rgba(7, 63, 95, 0.952)10%, rgb(2, 6, 22)32%);
+        background-size: 190% 260%;
+        background-position: 7% 10%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+            height: auto;
+        padding-top: 20px;
+    }
+
+    .section-container-landing{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 90vw;
+        max-width: 1440px;
+    }
+
+    .landing-content-wrapper{
+            margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .landing-heading{
+            font-size: 3.4rem;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .landing-text p{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        list-style: none;
+        color: rgb(125, 155, 201);
+            font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.7;
+        width: 75vw;
+    }
+    
+    .section-img-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .landing-section-image{
+        position: relative;
+            margin-top: 70px;
+        width: 80vw;
+        max-width: 800px;
+            height: 700px;
+        background-image: url(images/radamcode.png);
+        background-size: cover;
+        border-radius: 5px;
+        filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
+    }
+    
+
+    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
+    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
+
+    .section-light-background{
+        display: inline-flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-container-about{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 90vh;
+        min-height: 700px;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: top;
+        margin-top: 200px;
+        margin-bottom: 400px;
+    }
+
+    .text-box-container{
+        display: flex;
+        flex-direction: column;
+        width:90vw;
+    }
+
+    h1 {
+        background: linear-gradient(to right, #6d0bc9 0%, #0097bd 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+            font-size: 2.8rem;
+        line-height: 1.25;
+        letter-spacing: -.5px;
+        width: 90vw;
+    }
+
+    h2{
+        color: rgb(19, 19, 19);
+            font-size: 2.8rem;
+        letter-spacing: -.5px;
+        line-height: 1.1;
+        width: 470px;
+    }
+
+    h4{
+        margin-top: 35px;
+            font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: -0.5px;
+        color: rgb(100, 103, 126);
+        width: 370px;
+    }
+
+
+    .about-image-box-desktop{
+        position: static;
+        display: flex;
+        justify-content: flex-end;    
+        width: auto;
+    }
+    
+    .tiles-desktop {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-right: -20px;
+            margin-top: 350px;
+    }
+    
+    .about-tiles-desktop {
+        width: 400px;
+    }
+
+    .pancake-icon{
+        position: absolute;
+        display: flex;
+        width: auto;
+        margin-top: 330px;
+        margin-right: 43vw;
+        font-size: 10rem;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+    .about-image-box-mobile{
+        display: none;
+        justify-content: left;    
+    }
+
+    .pancake-icon-mobile{
+        display: none;
+        font-size: 10rem;
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+
+        
+
+
+    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
+    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
+
+    .section-dark-background-portfolio{
+        background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)15%);
+        background-size: 420% 125%;
+        background-position:55% 05%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-container-portfolio{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: center;
+        margin-top: 170px;
+        margin-bottom: 370px;
+    }
+
+    .h2-light-text{
+        color: white;
+    }
+
+    .h4-light-text{
+        color: rgb(130, 157, 196);
+        font-weight: 300;
+    }
+
+    .portfolio-grid{
+        display: grid;
+        justify-content: center;
+        column-gap: 4vw;
+        grid-template-columns: 26vw 26vw 26vw;
+        grid-template-rows: 22vw;
+        margin-top: 10vw;
+    }
+
+    .portfolio-grid-image{
+        background-color: white;
+        border-radius: 4px;
+        width:26vw;
+        height:26vw;
+    }
+
+
+
+
+    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
+    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
+
+    .section-dark-background-applications{
+            background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)14%);
+            background-size: 420% 225%;
+            background-position:31% 15%;
+        display: inline-flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-container-applications{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: space-between;
+            margin-top: 120px;
+            margin-bottom: 120px;
+    }
+
+    .grid-container{
+        display: flex;;
+        justify-content: center;
+    }
+
+
+    .applications-grid{
+        display: grid;
+        justify-content: center;
+        align-items: left;
+            margin-top: 140px;
+            grid-template-columns: 65px 65px 65px;
+            column-gap: 17vw;
+            grid-template-rows: 20vh 20vh 20vh 20vh;
+    }
+
+    .applications-grid-image{
+        border-radius: 2px;
+            width: 65px;
+            height: 65px;
+    }
+
+
+    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
+    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
+
+    .section-container-contact{
+        position: relative;
+        display: flex;
+            flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: space-between;
+            margin-top: 140px;
+            margin-bottom: 200px;
+    }
+
+    .contact-wrapper-text{
+        display: flex;
+        flex-direction: column;
+        width:35%;
+    }
+    
+    .contact-wrapper-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .hola-box{
+        width:46vw;
+        min-width: 300px;
+        max-width: 670px;
+    }
+
+    .contact-list{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 450px;
+        margin-top: 120px;
+        margin-left:0px;
+        background-color: white;
+        border: rgb(167, 167, 167);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        list-style: none;
+        padding:30px;
+        justify-content: center;
+        align-items: left;
+        font-size: 1.2rem;
+        filter: drop-shadow(5px 5px 10px rgb(153, 153, 153));
+    }
+
+    .contact-list a{
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: rgb(100, 103, 126);
+        line-height: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-list img{
+        width: 38px;
+        vertical-align: middle;
+        margin-right: 25px
+    }
+
+
+    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
+    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
+
+    .section-light-background-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .section-container-footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+            padding-top: 70px;
+        margin-bottom: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        color: rgb(83, 87, 110);
+    }
+
+    .footer-col-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    h3{
+        color: rgb(19, 19, 19);
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .footer-li-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-li-container ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        align-items: center;
+    }
+
+    .footer-li-container li{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 18px;
+    } 
+
+    .footer-social-icons{
+        margin-top: 35px;
+    }
+
+    .footer-social-icons li{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-social-icons-image{
+        height: 28px;
+        padding: 2px;
+        vertical-align: middle;
+    }
+
+    .footer-social-icons-image-gmail{
+        margin-top: 0px;
+        height: 28px;
+        padding: 3px;
+        vertical-align: baseline;
+    }
+
+    .footer-social-icons-image-discord{
+        margin-top: 2px;
+        height: 28px;
+        padding: 0px;
+        vertical-align: baseline;
+    }
+
+    /*<=================       FOOTER BASE TABLET      ==========================>*/
+
+    .footer-base{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        background-color: rgb(231, 231, 231);
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .footer-base-text{
+        color: rgb(83, 87, 110);
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+
+}
+        
+
+/*<=================       768PX      ==========================>*/
+
+@media screen and (max-width: 768px) {
+
+            
+    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
+    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
+    
+    .section-landing-background{
+        background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
+        background-size: 380% 360%;
+        background-position: 27% 30%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        min-height: 800px;
+        padding-top: 20px;
+    }
+    
+    .section-container-landing{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 90vw;
+        max-width: 1440px;
+    }
+    
+
+    nav{
+        padding-top: 0px;
+    }
+
+    .nav-link{
+        display: flex;
+    }
+
+    .landing-content-wrapper{
+            margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .landing-heading{
+            font-size: 3.4rem;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .landing-text p{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        list-style: none;
+        color: rgb(125, 155, 201);
+            font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.7;
+        width: 75vw;
+    }
+    
+    .section-img-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .landing-section-image{
+        position: relative;
+            margin-top: 70px;
+        width: 80vw;
+        max-width: 800px;
+            height: 360px;
+        background-image: url(images/radamcode.png);
+        background-size: cover;
+        border-radius: 5px;
+        filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
+    }
+    
+
+    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
+    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
+
+    .section-light-background{
+        display: inline-flex;
+        justify-content: center;
+        width: 100vw;
+        height: 1300px;
+    }
+
+    .section-container-about{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: top;
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+
+    .text-box-container{
+        display: flex;
+        flex-direction: column;
+        width:90vw;
+    }
+
+    h1 {
+        background: linear-gradient(to right, #6d0bc9 0%, #0097bd 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+            font-size: 2.8rem;
+        line-height: 1.25;
+        letter-spacing: -.5px;
+        width: 70vw;
+    }
+
+    h2{
+        color: rgb(19, 19, 19);
+            font-size: 2.8rem;
+        letter-spacing: -.5px;
+        line-height: 1.1;
+        width: 350px;
+    }
+
+    h4{
+        margin-top: 35px;
+            font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: -0.5px;
+        color: rgb(100, 103, 126);
+        width: 330px;
+    }
+
+
+    .about-image-box-desktop{
+        position: static;
+        display: flex;
+        justify-content: flex-end;    
+        width: auto;
+    }
+    
+    .tiles-desktop {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-right: -20px;
+            margin-top: 450px;
+    }
+    
+    .about-tiles-desktop {
+        width: 400px;
+    }
+
+    .pancake-icon{
+        position: absolute;
+        display: flex;
+        width: auto;
+        margin-top: 300px;
+        margin-right: 43vw;
+        font-size: 10rem;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+    .about-image-box-mobile{
+        display: none;
+        justify-content: left;    
+    }
+
+    .pancake-icon-mobile{
+        display: none;
+        font-size: 10rem;
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+
+        
+
+
+    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
+    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
+
+    .section-dark-background-portfolio{
+        background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)15%);
+        background-size: 420% 125%;
+        background-position:65% 05%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-container-portfolio{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: center;
+        margin-top: 170px;
+        margin-bottom: 270px;
+    }
+
+    .h2-light-text{
+        color: white;
+    }
+
+    .h4-light-text{
+        color: rgb(130, 157, 196);
+        font-weight: 300;
+    }
+
+    .portfolio-grid{
+        display: grid;
+        justify-content: center;
+        row-gap: 15vw;
+        grid-template-columns: 260px;
+        grid-template-rows: 260px 260px 260px;
+        margin-top: 150px;
+    }
+
+    .portfolio-grid-image{
+        background-color: white;
+        border-radius: 4px;
+        width:260px;
+        height:260px;
+    }
+
+
+
+
+    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
+    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
+
+    .section-dark-background-applications{
+            background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)14%);
+            background-size: 420% 225%;
+            background-position:31% 15%;
+        display: inline-flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-container-applications{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: space-between;
+            margin-top: 120px;
+            margin-bottom: 120px;
+    }
+
+    .grid-container{
+        display: flex;;
+        justify-content: center;
+    }
+
+
+    .applications-grid{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+            margin-top: 100px;
+            grid-template-columns: 65px 65px;
+            column-gap: 22vw;
+            row-gap: 12vw;
+            grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
+    }
+
+    .applications-grid-image{
+        border-radius: 2px;
+            width: 65px;
+            height: 65px;
+    }
+
+
+    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
+    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
+
+    .section-container-contact{
+        position: relative;
+        display: flex;
+            flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+        justify-content: space-between;
+            margin-top: 150px;
+            margin-bottom: 100px;
+    }
+
+    .contact-wrapper-text{
+        display: flex;
+        flex-direction: column;
+        width:35%;
+    }
+    
+    .contact-wrapper-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .hola-box{
+        width:46vw;
+        min-width: 300px;
+        max-width: 670px;
+    }
+
+    .contact-list{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 450px;
+        margin-top: -40px;
+        margin-left:0vw;
+        background-color: white;
+        border: rgb(167, 167, 167);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        list-style: none;
+        padding:30px;
+        justify-content: center;
+        align-items: left;
+        font-size: 1.2rem;
+        filter: drop-shadow(5px 5px 10px rgb(153, 153, 153));
+    }
+
+    .contact-list a{
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: rgb(100, 103, 126);
+        line-height: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-list img{
+        width: 38px;
+        vertical-align: middle;
+        margin-right: 25px
+    }
+
+
+    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
+    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
+
+    .section-light-background-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .section-container-footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        max-width: 1440px;
+            padding-top: 70px;
+        margin-bottom: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        color: rgb(83, 87, 110);
+    }
+
+    .footer-col-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    h3{
+        color: rgb(19, 19, 19);
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .footer-li-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-li-container ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        align-items: center;
+    }
+
+    .footer-li-container li{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 18px;
+    } 
+
+    .footer-social-icons{
+        margin-top: 35px;
+    }
+
+    .footer-social-icons li{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-social-icons-image{
+        height: 28px;
+        padding: 2px;
+        vertical-align: middle;
+    }
+
+    .footer-social-icons-image-gmail{
+        margin-top: 0px;
+        height: 28px;
+        padding: 3px;
+        vertical-align: baseline;
+    }
+
+    .footer-social-icons-image-discord{
+        margin-top: 2px;
+        height: 28px;
+        padding: 0px;
+        vertical-align: baseline;
+    }
+
+    /*<=================       FOOTER BASE TABLET      ==========================>*/
+
+    .footer-base{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        background-color: rgb(231, 231, 231);
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .footer-base-text{
+        color: rgb(83, 87, 110);
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+
+}
 
 /*<=================       375PX      ==========================>*/
 
@@ -1059,7 +1546,7 @@ h3{
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 120vh;
+    height: auto;
     padding-top: 20px;
 }
 
@@ -1067,8 +1554,9 @@ h3{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 700px;
     width: 90vw;
+    margin-bottom: 100px;
     max-width: 1440px;
 }
 
@@ -1094,7 +1582,7 @@ nav{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 700px;
     width: 90vw;
     max-width: 1440px;
 }
@@ -1136,16 +1624,16 @@ nav{
 
 .landing-section-image{
     position: relative;
-        margin-top: 70px;
-    width: 85vw;
+    display: flex;
+    margin-top: 40px;
+    width: 80vw;
+    height: 500px;
     max-width: 800px;
-        height: 250px;
     background-image: url(images/radamcode.png);
-    background-size: 230%;
+    background-size: cover;
     border-radius: 5px;
     filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.821));
 }
-
 
 /*<===============      ABOUT - SECTION - MOBILE     ===============================>*/
 /*<===============      ABOUT - SECTION - MOBILE     ===============================>*/
@@ -1176,7 +1664,7 @@ nav{
 }
 
 h1 {
-    background: linear-gradient(to right, #6d0bc9 0%, #0097bd 50%);
+    background: linear-gradient(to right, #0941aa 0%, #09b1db 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
         font-size: 2.4rem;
@@ -1329,7 +1817,7 @@ h4{
         margin-top: 140px;
         grid-template-columns: 65px 65px;
         column-gap: 20vw;
-        grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
 }
 
 .applications-grid-image{
