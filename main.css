@@ -1053,7 +1053,7 @@ h3{
 /*<===============      LANDING - SECTION - MOBILE     ===============================>*/
 
 .section-landing-background{
-    background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
+    background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(3, 9, 34)17%);
     background-size: 380% 360%;
     background-position: 27% 30%;
     display: flex;
@@ -1121,7 +1121,7 @@ nav{
     list-style: none;
     color: rgb(125, 155, 201);
         font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.7;
     width: 75vw;
 }
@@ -1270,7 +1270,7 @@ h4{
 
 .h4-light-text{
     color: rgb(130, 157, 196);
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .portfolio-grid{
