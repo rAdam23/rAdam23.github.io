@@ -1276,8 +1276,8 @@ h4{
 .portfolio-grid{
     display: grid;
     justify-content: center;
-    row-gap: 250px;
-    grid-template-columns: 220px;
+    row-gap: 260px;
+    grid-template-columns: 250px;
     grid-template-rows: 50px 50px 50px;
     margin-top: 140px;
 }
@@ -1285,8 +1285,8 @@ h4{
 .portfolio-grid-image{
     background-color: white;
     border-radius: 4px;
-    width:220px;
-    height:220px;
+    width:250px;
+    height:250px;
 }
 
 
@@ -1350,7 +1350,7 @@ h4{
     width: 90vw;
     max-width: 1440px;
     justify-content: space-between;
-        margin-top: 140px;
+        margin-top: 15vh;
         margin-bottom: 30vh;
 }
 
@@ -1377,7 +1377,7 @@ h4{
         display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 85vw;
+    width: 80vw;
     height: auto;
             margin-top: 90px;
         margin-left:0px;
@@ -1388,8 +1388,8 @@ h4{
     border-width: 1px;
     border-radius: 4px;
     list-style: none;
-    padding-left:25px;
-    padding-right:25px;
+    padding-left:20px;
+    padding-right:20px;
     padding-top:15px;
     padding-bottom:15px;
     filter: drop-shadow(5px 5px 10px rgb(153, 153, 153));
