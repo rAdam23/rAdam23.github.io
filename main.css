@@ -1276,8 +1276,8 @@ h4{
 .portfolio-grid{
     display: grid;
     justify-content: center;
-    row-gap: 220px;
-    grid-template-columns: 200px;
+    row-gap: 250px;
+    grid-template-columns: 220px;
     grid-template-rows: 50px 50px 50px;
     margin-top: 140px;
 }
@@ -1285,8 +1285,8 @@ h4{
 .portfolio-grid-image{
     background-color: white;
     border-radius: 4px;
-    width:200px;
-    height:200px;
+    width:220px;
+    height:220px;
 }
 
 
