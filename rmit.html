@@ -1,325 +1,507 @@
 <!DOCTYPE html>
-<Html>
-    
+
 <head>
-
-    <title>Welcome to rAdam23</title> 
-
-<!-- VIEWPORT --> 
+    <title>Welcome to rAdam23</title>
     
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- CHARACTER SETS --> 
+    <meta charset="UTF-8">
+
+    <!-- FAVICON -->    
+    <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+
+    <!-- FONTS -->    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+            
+    <!-- APPLE ICONS --------------->    
+
+            <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+            <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+            <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+            <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />    
     
-<!-- STYLESHEET --> 
+    <!-- VIEWPORT --------------->    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <link rel="stylesheet" href="main.css">
+    <!-- STYLESHEET --------------->    
 
-<!-- FAVICON -->    
-        <link rel="icon" href="radam23favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="main.css">
 
-<!-- GRADIENT --------------->    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-        </script>
-
-<!-- GOOGLE FONTS --------------->    
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        </style>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- GOOGLE RECAPTCHA --------------->    
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-
-         <script> 
-             function onSubmit(token) {document.getElementById("demo-form").submit();}
-         </script>
-    
 </head>
 
+<body>
 
-    
-<!---- BEGINNING BODY ------------------------->
 
-<body id="bodyPortfolioRmit"> 
+<!------------   HEADER SECTION  ----------------------------->
+<section class="case-study-header">
 
-    
-<!--------- NAVBAR ---------------------------->
+    <div class="section-container-landing-case-study">
 
-    
-<body id="bodyPortfolioRmit"> 
-    
-    <div id="gradient"/>
-
-    <nav>
-        <a href="index.html" class="logolink">rAdam23</a>
-        
-            <div class="navbarlinks">
-                
-                    <a href="about.html" id="aboutlink">about</a>
-                    
-                    <a href="portfolio.html" id="portfoliolink">portfolio</a>
-                    <!--
-                    <a href="code.html" id="codelink">code</a>
-                    -->
-                    <a href="https://github.com/rAdam23" target="_blank" id="githublink">github</a>
-                    
-                    <a href="contact.html" id="contactlink">contact</a>
-                    <!--
-                    <a href="login.html" id="loginlink">login</a>
-                    -->
+        <nav>
+            <div class="nav-link-case-study-back">
+                <a href="index.html"><span>&#8592;</span>return home</a>
             </div>
             
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="nav-link-container">
+                <a href="#about-anchor">       
+                    <div class="nav-link">about</div>
+                </a>
+                <a href="#portfolio-anchor">       
+                    <div class="nav-link">portfolio</div>
+                </a>
+                <a href="#contact-anchor">       
+                    <div class="nav-link-contact-button">contact</div>
+                </a>
             </div>
-         
-    </nav>>
-    
+        </nav>
 
-    
-
-    
-<!--------- HERO TEXT ------------------------------>
-    
-    <section class="heroBannerPortfolio">
-        <p class= "heroText">/ Rmit</p>   
-</section>
-
-    
-<!--------- SECTION 1 (RMIT) ----------------------->
-    
-<section class="Section1">
-    
-    <div class="Section1ImgBox">     
-        <div class="Section1ContainerRmit"></div>
+        <div class="landing-content-wrapper">
+            <div class="landing-heading">RMIT University</div>
+            <div class="landing-text">
+                <p>User Experience.<br>Case Study.</p>
+            </div>
         </div>
+    </div>
+
 </section>
 
-    
-    
-<!--------- SECTION 2 (RMIT) ----------------------->
 
-<section class="Section2"> 
- 
-<div class="Section2Box">
-       
-    <div class="Section2Container">
-        <div class="Section2TextContainer">
-            <p class="textBoxPreHeading">1. ABOUT</p>
-            <p class="textBoxHeading">Rmit University</p>
-            <p class="textBoxContent">RMIT is a leading Australian university ranked 11th in the world and recognised for its leadership and innovation in technology, arts and design*. It is regarded as the top art and design school in Australia and Southern Hemisphere.**</p>
+<!-------   SECTION 1. ABOUT SECTION 2. MY ROLE  --------->
 
+<section class="portfolio-section-vert">
 
-            <p class="textBoxPreHeading2">2. MY ROLE</p>
-            <p class="textBoxHeading">Ux Designer</p>
-            <ul class="textBoxContentList">
-            <li>User Research & Interviews</li>
-            <li>Synthesis & Affinity mapping</li>
-            <li>Ideation / Prototyping</li>
-            <li>User Experience Testing</li>
+    <div class="portfolio-vert-container">
+
+        <div class="portfolio-vert-textwrap-1">
+            <div class="portfolio-pre-heading-sml">1. ABOUT</div>
+            <div class="portfolio-main-heading-lrg">RMIT University</div>
+            <div class="portfolio-content-text">RMIT is a leading Australian university ranked 11th in the world and recognised for its leadership and innovation in technology, arts and design*. It is regarded as the top art and design school in Australia and Southern Hemisphere.</div>
+        </div>
+
+        <div class="portfolio-vert-textwrap-2">
+            <div class="portfolio-pre-heading-sml">2. MY ROLE</div>
+            <div class="portfolio-main-heading-lrg">Ux Designer</div>
+            <ul class="portfolio-content-list-padding">
+                <li>User Research & Interviews</li>
+                <li>Synthesis & Affinity mapping</li>
+                <li>Ideation / Prototyping</li>
+                <li>User Experience Testing</li>
             </ul>
         </div>
-        
-        <div class="Section2ImgContainerRmit"></div>
-        
+
     </div>
 
-</div>
-   
-</section>  
+    <div class="vert-image-rmit-logo"></div>
+</section>
 
-    
-<!--------- SECTION 3 (RMIT) ----------------------->
 
-<section class="Section3"> 
-       
-<div class="Section3Box">
-    
-    
-    <div class="Section3ImgContainerRmit"></div>
-    
-    <div class="Section3TextContainer">
+<!-------   SECTION 1. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-horiz-image-about"></div>
+
+    <div class="portfolio-horiz-content-mobile">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml">1. ABOUT</div>
+            <div class="portfolio-main-heading-lrg">RMIT University</div>
+        </div> 
         
-        <div class="TextContainerContentBox0">
-            <p class="textBoxPreHeading">3. HYPOTHESIS</p>
-            <p class="textBoxHeading">The Problem</p>
+        <div class="portfolio-horiz-content-col-2-mobile">
+            RMIT is a leading Australian university ranked 11th in the world and recognised for its leadership and innovation in technology, arts and design*. It is regarded as the top art and design school in Australia and Southern Hemisphere.
         </div>
-        
-        <div class="TextContainerContentBox1">
-            <a class="textBoxContent">RMIT Online provides prospective students with the ability to attend the universities higher education courses via its online portal.<br><br>It utilises an online student login platform 'Canvas' to provide students with access to the uni's 'Collaborate Ultra' workspace.</a>
+        <div class="portfolio-vert-textwrap-2">
+            <div class="portfolio-pre-heading-sml">2. MY ROLE</div>
+            <div class="portfolio-main-heading-lrg">Ux Designer</div>
+            <ul class="portfolio-content-list-padding">
+                <li>User Research & Interviews</li>
+                <li>Synthesis & Affinity mapping</li>
+                <li>Ideation / Prototyping</li>
+                <li>User Experience Testing</li>
+            </ul>
         </div>
-        
-        <div class="TextContainerContentBox2">
-            <a class="textBoxContent">During my use of the platform it was clear that students had difficulty in locating webinars (subject lectures) due to unconventional naming and layouts within the workspace.<br><br>After confirming this hypothesis with desk research, I pursued this as a case study with the aim to improve the user experience design of the workspace.</a>
-        </div>
-   
+
     </div>
+</section>
 
-    
-</div>
+
+<!------------   SECTION 3. HYPOTHESIS ------------------>
+<section class="portfolio-section-horiz">
+
+    <div class="rmit-horiz-image-hypothesis"></div>
+
+    <div class="portfolio-horiz-content">
+        
+        <div class="portfolio-horiz-content-col-1">
+            <div class="portfolio-pre-heading-sml">3. HYPOTHESIS</div>
+            <div class="portfolio-main-heading-lrg">The Problem</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2">
+            RMIT Online provides prospective students with the ability to attend the universities higher education courses via its online portal.<br><br> It utilises an online student login platform 'Canvas' to provide students with access to the uni's 'Collaborate Ultra' workspace.
+        </div>
+        <div class="portfolio-horiz-content-col-3">
+            During my use of the platform it was clear that students had difficulty in locating webinars (subject lectures) due to unconventional naming and layouts within the workspace.<br><br>After confirming this hypothesis with desk research, I pursued this as a case study with the aim to improve the user experience design of the workspace..
+        </div>
+    </div>
 
 </section>
 
-    
-<!--------- SECTION 4 (RMIT) ----------------------->
 
-<section class="Section4"> 
- 
-<div class="Section4Box">
-       
-    <div class="Section4Container">
+<!-------   SECTION 3. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-horiz-image-hypothesis"></div>
+
+    <div class="portfolio-horiz-content-mobile">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml">3. HYPOTHESIS</div>
+            <div class="portfolio-main-heading-lrg">The Problem</div>
+        </div> 
         
-        <div class="Section4ImgContainerRmit"></div>
+        <div class="portfolio-horiz-content-col-2-mobile">
+            RMIT Online provides prospective students with the ability to attend the universities higher education courses via its online portal.<br><br> It utilises an online student login platform 'Canvas' to provide students with access to the uni's 'Collaborate Ultra' workspace.
+        </div>
+        <div class="portfolio-horiz-content-col-2-mobile">
+            During my use of the platform it was clear that students had difficulty in locating webinars (subject lectures) due to unconventional naming and layouts within the workspace.<br><br>After confirming this hypothesis with desk research, I pursued this as a case study with the aim to improve the user experience design of the workspace..
+        </div>
 
-        <div class="Section4TextContainerRmit">        
-            <p class="textBoxPreHeading">4. RESEARCH</p>
-                <p class="textBoxHeading">User Testing</p>
-                
-            <a class="textBoxContent">Research consisted of developing a lean persona identifying the typical users of the workspace.<br><br>Once completed 9 individuals that matched the lean persona were interviewed for 3 rounds of user testing.</a>
+    </div>
+</section>
+
+
+
+<!------------   SECTION 4. RESEARCH -------------------->
+<section class="portfolio-section-horiz">
+
+    <div class="rmit-horiz-image-research"></div>
+
+    <div class="portfolio-horiz-content">
+
+        <div class="portfolio-horiz-content-col-1">
+            <div class="portfolio-pre-heading-sml">4. RESEARCH</div>
+            <div class="portfolio-main-heading-lrg">User Testing</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2">
+            Research consisted of developing a lean persona identifying the typical users of the workspace.
+            <br>
+            <br>
+            Once completed 9 individuals that matched the lean persona were interviewed for 3 rounds of user testing. First-round user testing consisted of face to face interviews (conducted via zoom).
+        </div>
+        <div class="portfolio-horiz-content-col-3">
+            Usability testing as users interacted with a clickable mock prototype of the workspace, and finally a questionnaire consisting of a series of qualitative & quantitative questions.
+        </div>
+    </div>
+</section>
+
+
+<!-------   SECTION 4. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-horiz-image-research"></div>
+
+    <div class="portfolio-horiz-content-mobile">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml">4. RESEARCH</div>
+            <div class="portfolio-main-heading-lrg">User Testing</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2-mobile">
+            Research consisted of developing a lean persona identifying the typical users of the workspace.
+            <br>
+            <br>
+            Once completed 9 individuals that matched the lean persona were interviewed for 3 rounds of user testing. First-round user testing consisted of face to face interviews (conducted via zoom).
+        </div>
+        <div class="portfolio-horiz-content-col-2-mobile">
+            Usability testing as users interacted with a clickable mock prototype of the workspace, and finally a questionnaire consisting of a series of qualitative & quantitative questions.
+        </div>
+
+    </div>
+</section>
+
+<!------------   SECTION 5. SYNTHESIS ------------------->
+<section class="portfolio-section-vert">
+
+    <div class="rmit-vert-image-synthesis"></div>
+    
+    <div class="portfolio-vert-container">
+
+        <div class="portfolio-vert-textwrap-1">
+            <div class="portfolio-pre-heading-sml">5. SYNTHESIS</div>
+            <div class="portfolio-main-heading-lrg">Insights</div>
+            <div class="portfolio-content-text">After first round user testing, key insights included:</div>
             
-            <a class="textBoxContent">First-round user testing was consisted of face to face interviews (conducted via zoom).<br><br> Usability testing as users interacted with a clickable mock prototype of the workspace, and finally a questionnaire consisting of a series of qualitative & quantitative questions.</a>
+            <ul class="portfolio-content-list-padding">
+                <li>The need for simplicity</li>
+                <li>An all-in-one location for all inormation regarding webinars</li>
+                <li>Low cognitive load when using</li>
+            </ul>
+        </div>
+        <div class="portfolio-content-text-2">Recommendations derived from these insights included:</div>
+            <ul class="portfolio-content-list-padding">
+                <li>That the new design be much 'simpler' in appearance and use</li>
+                <li>That this simplicity must extend to 'navigation to' and 'from' the workspace.</li>
+                <li>The importance of design heuristics were noted here.</li>
+            </ul>  
+    </div>
+</section>
+
+
+<!-------   SECTION 5. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-horiz-image-research"></div>
+
+    <div class="portfolio-horiz-content-mobile">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml">5. SYNTHESIS</div>
+            <div class="portfolio-main-heading-lrg">Insights</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2-mobile">
+            <div class="portfolio-content-text">After first round user testing, key insights included:</div>
+            
+            <ul class="portfolio-content-list-padding">
+                <li>The need for simplicity</li>
+                <li>An all-in-one location for all inormation regarding webinars</li>
+                <li>Low cognitive load when using</li>
+            </ul>
+        
+            <div class="portfolio-content-text">Recommendations derived from these insights included:</div>
+            
+            <ul class="portfolio-content-list-padding">
+                <li>That the new design be much 'simpler' in appearance and use</li>
+                <li>That this simplicity must extend to 'navigation to' and 'from' the workspace.</li>
+                <li>The importance of design heuristics were noted here.</li>
+            </ul>  
+        </div>
+    </div>
+</section>
+
+<!------------   SECTION 6. DESIGN ---------------------->
+<section class="portfolio-section-horiz">
+
+    <div class="rmit-horiz-image-design"></div>
+
+    <div class="portfolio-horiz-content">
+
+        <div class="portfolio-horiz-content-col-1">
+            <div class="portfolio-pre-heading-sml">6. DESIGN</div>
+            <div class="portfolio-main-heading-lrg">Ideation & Testing</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2">
+            For ideation phase, I used crazy 8's exercise to rapidly develop 8 paper prototypes of prospective designs for the workspace.
+            <br>
+            <br>
+            For each prototype I focused on altering content layout, orientation, focus on media and wording used. Once created, second round usability testing was then conducted via zoom.
+        </div>
+        <div class="portfolio-horiz-content-col-3">
+            Insights from second round interviews were that:
+            <ul class="portfolio-content-list-padding">
+                <li>Simplicity was king (again)</li>
+                <li>Any complexity in design = confusion</li>
+                <li>Common design heuristics strongly determined the top 2 favourite designs</li>
+            </ul> 
+        </div>
+    </div>
+</section>
+
+
+<!-------   SECTION 6. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-horiz-image-design"></div>
+
+    <div class="portfolio-horiz-content-mobile">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml">6. DESIGN</div>
+            <div class="portfolio-main-heading-lrg">Ideation & Testing</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2-mobile">
+            <div class="portfolio-content-text"> For ideation phase, I used crazy 8's exercise to rapidly develop 8 paper prototypes of prospective designs for the workspace.
+                <br>
+                <br>
+                For each prototype I focused on altering content layout, orientation, focus on media and wording used. Once created, second round usability testing was then conducted via zoom.</div>
+        
+            <div class="portfolio-content-text">Insights from second round interviews were that:</div>
+            
+            <ul class="portfolio-content-list-padding">
+                <li>Simplicity was king (again)</li>
+                <li>Any complexity in design = confusion</li>
+                <li>Common design heuristics strongly determined the top 2 favourite designs</li>
+            </ul>  
+        </div>
+    </div>
+</section>
+
+<!------------   SECTION 7.  ----------------------------->
+<section class="portfolio-section-horiz">
+
+    <div class="rmit-horiz-image-draft"></div>
+
+    <div class="portfolio-horiz-content">
+
+        <div class="portfolio-horiz-content-col-1">
+            <div class="portfolio-pre-heading-sml">7. DRAFT</div>
+            <div class="portfolio-main-heading-lrg">Ideation</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2">
+            After second-round testing, synthesis and insights, I developed a high fidelity clickable draft prototype of the preferred prototype for third round user testing.
+            <br>
+            <br>
+            Users reacted positively to the new layout and intuitive design providing further feedback during testing.
+        </div>
+        <div class="portfolio-horiz-content-col-3">
+            It was during this third and final stage that I reached an 'aha moment' where it became clear users were seeking a design layout similar to familiar video streaming platforms already used such as Youtube and Facebook.
+        </div>
+    </div>
+</section>
+
+
+<!-------   SECTION 7. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-horiz-image-draft"></div>
+
+    <div class="portfolio-horiz-content-mobile">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml">7. DRAFT</div>
+            <div class="portfolio-main-heading-lrg">Ideation</div>
+        </div> 
+        
+        <div class="portfolio-horiz-content-col-2-mobile">
+            <div class="portfolio-content-text"> For ideation phase, I After second-round testing, synthesis and insights, I developed a high fidelity clickable draft prototype of the preferred prototype for third round user testing.
+            <br>
+            <br>
+            Users reacted positively to the new layout and intuitive design providing further feedback during testing.
+            </div>
+        
+            <div class="portfolio-content-text">It was during this third and final stage that I reached an 'aha moment' where it became clear users were seeking a design layout similar to familiar video streaming platforms already used such as Youtube and Facebook.</div>
             
         </div>
+    </div>
+</section>
+
+<!------------   SECTION 8. FINAL ----------------------------->
+<section class="portfolio-section-vert-portfolio">
+
+    <div class="portfolio-vert-container-dark">
+
+        <div class="portfolio-vert-textwrap-1">
+            <div class="portfolio-pre-heading-sml-dark">8. SOLUTION</div>
+            <div class="portfolio-main-heading-lrg-dark">The Prototype</div>
+            <div class="portfolio-content-text-dark">After three rounds of user testing, a final high fidelity clickable design was created.
+            <br>
+            <br>
+            The design changes include a much simpler interface (using similar design heuristics found in the most commonly used desktop video streaming platforms today Youtube and Facebook.
+            <br>
+            <br>
+            Simpler wording along navigation lists, a greater focus on the video player within the workspace, contextual information about headings and videos further improved the user experience significantly. 
+            <br>
+            <br>
+            The overall impression was a joy to use for users and intuitive. A final list of recommendations was also created for the university to review.
+            </div>
+        </div>
+    </div>
+    <div class="rmit-vert-image-prototype"><img src="images/final prototype edit for upload.png"></div>
+</section>
+
+<!-------   SECTION 8. MOBILE--->
+
+<section class="portfolio-section-horiz-mobile">
+
+    <div class="rmit-vert-image-prototype-mobile"><img src="images/final prototype edit for upload.png"></div>
+
+    <div class="portfolio-horiz-content-mobile-dark">
+
+        <div class="portfolio-horiz-content-col-1-mobile">
+            <div class="portfolio-pre-heading-sml-dark">8. SOLUTION</div>
+            <div class="portfolio-main-heading-lrg-dark">The Prototype</div>
+        </div> 
         
+        <div class="portfolio-horiz-content-col-2-mobile">
+            <div class="portfolio-content-text-dark">After three rounds of user testing, a final high fidelity clickable design was created. The design changes include a much simpler interface (using similar design heuristics found in the most commonly used desktop video streaming platforms today Youtube and Facebook.
+            <br>
+            <br>
+            Simpler wording along navigation lists, a greater focus on the video player within the workspace, contextual information about headings and videos further improved the user experience significantly. The overall impression was a joy to use for users and intuitive. A final list of recommendations was also created for the university to review.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------   FOOTER SECTION  ----------------------------->
+<section class="section-light-background-footer">
+    
+    <div class="section-container-footer">
+
+            <div class="footer-col-logo">
+                <h3>rAdam23</h3>
+            </div>
+
+            <div class="footer-li-container">
+                    <ul>
+                        <li>About</li>
+                        <li>Portfolio</li>
+                        <li>Applications</li>
+                        <li>Contact</li>
+                    </ul>
+
+                    <ul>
+                        <li>Case Studies</li>
+                        <li>RMIT</li>
+                        <li>Walleybanque</li>
+                        <li>rAdam23</li>
+                    </ul>
+
+                    <div class="footer-social-icons">
+                        <li><img src="images/facebook.svg" class="footer-social-icons-image"></li>
+                        <li><img src="images/twitter.svg" class="footer-social-icons-image"></li>
+                        <li><img src="images/discord.svg" class="footer-social-icons-image-discord"></li>
+                        <li><img src="images/gmail.svg" class="footer-social-icons-image-gmail"></li>
+                    </div>
+                    
+            </div>
     </div>
 
-</div>
-   
-</section>  
-
-    
-<!--------- SECTION 5 (RMIT) ----------------------->
-
-<section class="Section5"> 
-       
-<div class="Section5Box">
-    
-    
-    <div class="Section5ImgContainerRmit"></div>
-    
-    <div class="Section5TextContainer">
-        
-        <div class="TextContainerContentBox0">
-            <p class="textBoxPreHeading">5. SYNTHESIS</p>
-            <p class="textBoxHeading">Insights</p>
-        </div>
-        
-        <div class="TextContainerContentBox1">
-            <a class="textBoxContent">After first round user testing, key insights included:<br><ul class="textBoxContentList">
-            <li>The need for simplicity</li>
-            <li>An all-in-one location for all information regarding webinars</li>
-            <li>Low cognitive load when using</li>
-            </ul>
-        </div>
-        
-        <div class="TextContainerContentBox2">
-            <a class="textBoxContent">Recommendations derived from these insights included: that the new design be much 'simpler' in appearance and use, that this simplicity must extend to 'navigation to' and 'from' the workspace. The importance of design heuristics were noted here.</a>
-        </div>
-   
+    <div class="footer-base">
+        <p class="footer-base-text">©2021 rAdam23</p>
+        <p class="footer-base-text">Terms</p>
+        <p class="footer-base-text">Privacy Policy</p>
     </div>
-
-    
-</div>
 
 </section>
 
-    
-<!--------- SECTION 6 (RMIT) ----------------------->
-
-<section class="Section6"> 
-       
-<div class="Section6Box">
-    
-    
-    <div class="Section6ImgContainerRmit"></div>
-    
-    <div class="Section6TextContainer">
-        
-        <div class="TextContainerContentBox0">
-            <p class="textBoxPreHeading">6. DESIGN</p>
-            <p class="textBoxHeading">Ideation & Testing</p>
-        </div>
-        
-        <div class="TextContainerContentBox1">
-            <a class="textBoxContent">For ideation phase, I used crazy 8's exercise to rapidly develop 8 paper prototypes of prospective designs for the workspace.<br><br>For each prototype I focused on altering content layout, orientation, focus on media and wording used. Once created, second round usability testing was then conducted via zoom.</a>
-        </div>
-        
-        <div class="TextContainerContentBox2">
-            <a class="textBoxContent">Insights from second round interviews were that:<br><ul class="textBoxContentList">
-            <li>Simplicity was king (again)</li>
-            <li>Any complexity in design = confusion</li>
-            <li>Common design heuristics strongly determined the top 2 favourite designs</li>
-            </ul>
-        </div>
-   
-    </div>
-
-    
-</div>
-
-</section>
-    
-
-<!--------- SECTION 7 (RMIT) ----------------------->
-
-<section class="Section7"> 
-       
-<div class="Section7Box">
-    
-    
-    <div class="Section7ImgContainerRmit"></div>
-    
-    <div class="Section7TextContainer">
-        
-        <div class="TextContainerContentBox0RmitSection7">
-            <p class="textBoxPreHeading">7.DRAFT</p>
-            <p class="textBoxHeading">Ideation</p>
-        </div>
-        
-        <div class="TextContainerContentBox1">
-            <a class="textBoxContent">After second-round testing, synthesis and insights, I developed a high fidelity clickable draft prototype of the preferred prototype for third round user testing.<br><br>Users reacted positively to the new layout and intuitive design providing further feedback during testing.</a>
-        </div>
-        
-        <div class="TextContainerContentBox2">
-            <a class="textBoxContent">It was during this third and final stage that I reached an 'aha moment' where it became clear users were seeking a design layout similar to familiar video streaming platforms already used such as Youtube and Facebook.</a>
-        </div>
-   
-    </div>
-
-    
-</div>
-
-</section>
-
-    
-<!--------- SECTION 8 (RMIT) ----------------------->
-
-<section class="Section8"> 
- 
-<div class="Section8Box">
-       
-    <div class="Section8Container">
-        <div class="Section8TextContainer">
-            <p class="textBoxPreHeading">8.THE FINAL</p>
-            <p class="textBoxHeading">Prototype</p>
-            <p class="textBoxContent">After three rounds of user testing, a final high fidelity clickable design was created.
-            <br><br>The design changes include a much simpler interface (using similar design heuristics found in the most commonly used desktop video streaming platforms today Youtube and Facebook.
-            <br><br>Simpler wording along navigation lists, a greater focus on the video player within the workspace, contextual information about headings and videos further improved the user experience significantly.
-            <br><br>The overall impression was a joy to use for users and intuitive. A final list of recommendations was also created for the university to review.
-            </p>
-        </div>
-        
-        <div class="Section8ImgContainerRmit"></div>
-        
-    </div>
-
-</div>
-    
-</section>  
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+</html>
