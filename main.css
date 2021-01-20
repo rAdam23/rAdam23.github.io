@@ -978,9 +978,9 @@ h3{
     }
 
     .portfolio-section-horiz-mobile{
-        display: none;
+        display: flex;
         flex-direction: column;
-        height:auto;
+        height: auto;
         width: 100%;
         background-color:rgb(47, 61, 83);
     }
