@@ -540,8 +540,8 @@ h3{
 @media screen and (max-width: 1024px) {
 
             
-    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
-    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
+    /*<===============      LANDING - SECTION - TABLET 1024    ===============================>*/
+    /*<===============      LANDING - SECTION - TABLET 1024    ===============================>*/
     
     .section-landing-background{
         background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
@@ -639,8 +639,8 @@ h3{
     }
     
 
-    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
-    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
+    /*<===============      ABOUT - SECTION - TABLET 1024    ===============================>*/
+    /*<===============      ABOUT - SECTION - TABLET 1024    ===============================>*/
 
     .section-light-background{
         display: inline-flex;
@@ -653,12 +653,12 @@ h3{
         position: relative;
         display: flex;
         flex-direction: row;
-        height: 90vh;
+        height: auto;
         min-height: 700px;
         width: 90vw;
         max-width: 1440px;
         justify-content: top;
-        margin-top: 200px;
+        margin-top: 120px;
         margin-bottom: 400px;
     }
 
@@ -709,7 +709,7 @@ h3{
         display: flex;
         justify-content: center;
         margin-right: -20px;
-            margin-top: 350px;
+            margin-top: 270px;
     }
     
     .about-tiles-desktop {
@@ -720,7 +720,7 @@ h3{
         position: absolute;
         display: flex;
         width: auto;
-        margin-top: 330px;
+        margin-top: 360px;
         margin-right: 43vw;
         font-size: 10rem;
         justify-content: center;
@@ -743,13 +743,13 @@ h3{
         
 
 
-    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
-    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
+    /*<===========      PORTFOLIO - SECTION -TABLET  1024    ===================================>*/
+    /*<===========      PORTFOLIO - SECTION -TABLET  1024    ===================================>*/
 
     .section-dark-background-portfolio{
         background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)15%);
-        background-size: 420% 125%;
-        background-position:55% 05%;
+        background-size: 220% 165%;
+        background-position:70% 0%;
         display: flex;
         justify-content: center;
         width: 100vw;
@@ -765,7 +765,7 @@ h3{
         max-width: 1440px;
         justify-content: center;
         margin-top: 170px;
-        margin-bottom: 370px;
+        margin-bottom: 15vh;
     }
 
     .h2-light-text{
@@ -796,8 +796,8 @@ h3{
 
 
 
-    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
-    /*<===================      APPLICATIONS - SECTION - TABLET      ===========================>*/
+    /*<===================      APPLICATIONS - SECTION - TABLET  1024    ===========================>*/
+    /*<===================      APPLICATIONS - SECTION - TABLET  1024    ===========================>*/
 
     .section-dark-background-applications{
             background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)14%);
@@ -844,8 +844,8 @@ h3{
     }
 
 
-    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
-    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
+    /*<===============      CONTACT - SECTION - TABLET  1024   ===============================>*/
+    /*<===============      CONTACT - SECTION - TABLET  1024   ===============================>*/
 
     .section-container-contact{
         position: relative;
@@ -879,13 +879,13 @@ h3{
     }
 
     .contact-list{
-        position: static;
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 300px;
         height: 450px;
-        margin-top: 120px;
-        margin-left:0px;
+        margin-top: 5vh;
+        margin-left:40vw;
         background-color: white;
         border: rgb(167, 167, 167);
         border-style: solid;
@@ -918,8 +918,8 @@ h3{
     }
 
 
-    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
-    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
+    /*<===================      FOOTER - SECTION - TABLET  1024    ===================================>*/
+    /*<===================      FOOTER - SECTION - TABLET  1024    ===================================>*/
 
     .section-light-background-footer{
         display: flex;
@@ -1021,7 +1021,7 @@ h3{
         vertical-align: baseline;
     }
 
-    /*<=================       FOOTER BASE TABLET      ==========================>*/
+    /*<=================       FOOTER BASE TABLET  1024    ==========================>*/
 
     .footer-base{
         display: flex;
@@ -1048,8 +1048,8 @@ h3{
 @media screen and (max-width: 768px) {
 
             
-    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
-    /*<===============      LANDING - SECTION - TABLET     ===============================>*/
+    /*<===============      LANDING - SECTION - 768     ===============================>*/
+    /*<===============      LANDING - SECTION - 768     ===============================>*/
     
     .section-landing-background{
         background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)17%);
@@ -1128,8 +1128,8 @@ h3{
     }
     
 
-    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
-    /*<===============      ABOUT - SECTION - TABLET     ===============================>*/
+    /*<===============      ABOUT - SECTION - 768     ===============================>*/
+    /*<===============      ABOUT - SECTION - 768     ===============================>*/
 
     .section-light-background{
         display: inline-flex;
@@ -1231,13 +1231,13 @@ h3{
         
 
 
-    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
-    /*<===========      PORTFOLIO - SECTION -TABLET      ===================================>*/
+    /*<===========      PORTFOLIO - SECTION -768      ===================================>*/
+    /*<===========      PORTFOLIO - SECTION -768      ===================================>*/
 
     .section-dark-background-portfolio{
         background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)15%);
-        background-size: 420% 125%;
-        background-position:65% 05%;
+        background-size: 380% 225%;
+        background-position:74% 45%;
         display: flex;
         justify-content: center;
         width: 100vw;
@@ -1252,8 +1252,8 @@ h3{
         width: 90vw;
         max-width: 1440px;
         justify-content: center;
-        margin-top: 170px;
-        margin-bottom: 270px;
+        margin-top: 120px;
+        margin-bottom: 10vh;
     }
 
     .h2-light-text{
@@ -1289,8 +1289,8 @@ h3{
 
     .section-dark-background-applications{
             background: radial-gradient( rgba(7, 63, 95, 0.952)0%, rgb(2, 6, 22)14%);
-            background-size: 420% 225%;
-            background-position:31% 15%;
+            background-size: 420% 275%;
+            background-position:38% 20%;
         display: inline-flex;
         justify-content: center;
         width: 100vw;
@@ -1306,7 +1306,7 @@ h3{
         max-width: 1440px;
         justify-content: space-between;
             margin-top: 120px;
-            margin-bottom: 120px;
+            margin-bottom: 0vh;
     }
 
     .grid-container{
@@ -1320,10 +1320,10 @@ h3{
         justify-content: center;
         align-items: center;
             margin-top: 100px;
-            grid-template-columns: 65px 65px;
-            column-gap: 22vw;
-            row-gap: 12vw;
-            grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
+            grid-template-columns: 65px 65px 65px;
+            column-gap: 20vw;
+            row-gap: 10vh;
+            grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
     }
 
     .applications-grid-image{
@@ -1333,8 +1333,8 @@ h3{
     }
 
 
-    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
-    /*<===============      CONTACT - SECTION - TABLET     ===============================>*/
+    /*<===============      CONTACT - SECTION - 768     ===============================>*/
+    /*<===============      CONTACT - SECTION - 768     ===============================>*/
 
     .section-container-contact{
         position: relative;
@@ -1343,9 +1343,9 @@ h3{
         height: auto;
         width: 90vw;
         max-width: 1440px;
-        justify-content: space-between;
-            margin-top: 150px;
-            margin-bottom: 100px;
+        justify-content: space-around;
+            margin-top: 40px;
+            margin-bottom: 240px;
     }
 
     .contact-wrapper-text{
@@ -1373,8 +1373,8 @@ h3{
         flex-direction: column;
         width: 300px;
         height: 450px;
-        margin-top: -40px;
-        margin-left:0vw;
+        margin-top: -7vh;
+        margin-left: 30vw;
         background-color: white;
         border: rgb(167, 167, 167);
         border-style: solid;
@@ -1382,7 +1382,7 @@ h3{
         border-radius: 4px;
         list-style: none;
         padding:30px;
-        justify-content: center;
+        justify-content: top;
         align-items: left;
         font-size: 1.2rem;
         filter: drop-shadow(5px 5px 10px rgb(153, 153, 153));
@@ -1407,8 +1407,8 @@ h3{
     }
 
 
-    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
-    /*<===================      FOOTER - SECTION - TABLET      ===================================>*/
+    /*<===================      FOOTER - SECTION - 768      ===================================>*/
+    /*<===================      FOOTER - SECTION - 768      ===================================>*/
 
     .section-light-background-footer{
         display: flex;
