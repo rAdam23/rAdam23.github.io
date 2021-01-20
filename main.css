@@ -84,7 +84,7 @@ nav a{
 }
 
 .nav-link-case-study-back{
-    margin-left: -30px;
+    padding-left: -30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -968,6 +968,20 @@ h3{
 
 @media screen and (max-width: 1024px) {
 
+    .portfolio-horiz-content-mobile{
+        display: flex;
+        align-items: top;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        min-width: auto;
+        height: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgb(233, 233, 233);   
+    }
 
     .portfolio-section-vert{
         display: none;
@@ -985,7 +999,15 @@ h3{
         background-color:rgb(47, 61, 83);
     }
 
+    .portfolio-horiz-content-col-1-mobile{
+        display: block;
+        justify-content: left;
+        width: 75vw;
+        margin-bottom: 30px;
+    }
+
     .portfolio-horiz-content-col-2-mobile, .portfolio-horiz-content-col-3-mobile{
+        width: 75vw;
         max-width: 100%;
     }
 
@@ -999,7 +1021,7 @@ h3{
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        min-width: 400px;
+        min-width: auto;
         height: auto;
         padding-left: 40px;
         padding-right: 40px;
