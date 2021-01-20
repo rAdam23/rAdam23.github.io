@@ -968,6 +968,27 @@ h3{
 
 @media screen and (max-width: 1024px) {
 
+    .case-study-header{
+        background: radial-gradient( rgba(25, 105, 151, 0.952)0%, rgb(2, 6, 22)22%);
+        background-size: 380% 260%;
+        background-position: 22% 18%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .section-container-landing-case-study{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        max-width: 1440px;
+        margin-bottom: 100px;
+    }        
+
     .portfolio-section-vert{
         display: none;
     }
@@ -978,6 +999,7 @@ h3{
 
     .portfolio-section-horiz-mobile{
         display: flex;
+        width:100vw;
     }
 
     .portfolio-horiz-content-col-2-mobile, .portfolio-horiz-content-col-3-mobile{
